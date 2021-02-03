@@ -12,7 +12,7 @@
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500&family=Fraunces:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="output.css" />
@@ -45,24 +45,30 @@
         <h1 class="text-light-cream font-heading text-4xl mb-8">
           Great coffee made simple.
         </h1>
-        <p class="text-light-cream font-body mb-9">
+        <p class="text-light-cream font-body mb-9 font-thin">
           Start your mornings with the world’s best coffees. Try our expertly
           curated artisan coffees from our best roasters delivered directly to
           your door, at your schedule.
         </p>
         <button
-          class="text-light-cream text-xl w-52 h-14 bg-dark-cyan rounded-lg font-heading"
+          class="text-light-cream text-xl w-52 h-14 bg-dark-cyan rounded-lg font-heading font-black"
           type="button"
         >
           Create your plan
         </button>
       </div>
     </section>
+
+    <!-- our collection section -->
     <section class="text-center mt-32">
-      <h1 class="font-heading text-4xl text-grey">Our collection</h1>
+      <h1 class="font-heading text-4xl text-grey font-black">Our collection</h1>
+
+      <!-- coffee card container -->
       <div class="grid grid-cols-1 gap-9 text-dark-grey-blue">
-        <div>
+        <!-- card 1 -->
+        <div class="grid gap-5 mt-10">
           <img
+            class="w-48 justify-self-center"
             src="./assets/home/desktop/image-gran-espresso.png"
             alt="gran expresso"
           />
@@ -72,24 +78,42 @@
             intense experience
           </p>
         </div>
-        <div>
-          <img src="./assets/home/desktop/image-planalto.png" alt="planalto" />
+
+        <!-- card 2 -->
+        <div class="grid gap-5">
+          <img
+            class="w-48 justify-self-center"
+            src="./assets/home/desktop/image-planalto.png"
+            alt="planalto"
+          />
           <h2 class="font-heading text-2xl font-black">Planalto</h2>
           <p class="font-body mb-9">
             Brazilian dark roast with rich and velvety body, and hints of fruits
             and nuts
           </p>
         </div>
-        <div>
-          <img src="./assets/home/desktop/image-piccollo.png" alt="piccollo" />
+
+        <!-- card 3 -->
+        <div class="grid gap-5">
+          <img
+            class="w-48 justify-self-center"
+            src="./assets/home/desktop/image-piccollo.png"
+            alt="piccollo"
+          />
           <h2 class="font-heading text-2xl font-black">Piccollo</h2>
           <p class="font-body mb-9">
             Mild and smooth blend featuring notes of toasted almond and dried
             cherry
           </p>
         </div>
-        <div>
-          <img src="./assets/home/desktop/image-danche.png" alt="danche" />
+
+        <!-- card 4 -->
+        <div class="grid gap-5">
+          <img
+            class="w-48 justify-self-center"
+            src="./assets/home/desktop/image-danche.png"
+            alt="danche"
+          />
           <h2 class="font-heading text-2xl font-black">Danche</h2>
           <p class="font-body mb-9">
             Ethiopian hand-harvested blend densely packed with vibrant fruit
