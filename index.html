@@ -22,34 +22,45 @@
   <body class="px-6 py-8">
     <!-- header -->
     <header class="flex items-center relative">
+      <!-- logo/link home -->
       <img
         class="w-40 h-5"
         src="./assets/shared/desktop/logo.svg"
         alt="Coffeeroasters logo"
       />
+
+      <!-- nav bar (desktop and tablet only) -->
       <nav class="inline hidden">
         <a href="#">Home</a>
         <a href="#">About us</a>
         <a href="#">Create your plan</a>
       </nav>
+
+      <!-- hamburger menu button (mobile only) -->
       <button class="inset-y-0 right-0 absolute sm:hidden">
         <img src="./assets/shared/mobile/icon-hamburger.svg" alt="" />
       </button>
     </header>
 
-    <!-- hero -->
+    <!-- hero section -->
     <section
       class="bg-hero-small bg-center bg-cover rounded-lg text-center py-24 grid place-content-center mt-8"
     >
+      <!-- hero container -->
       <div class="w-72 h-72">
+        <!-- hero title -->
         <h1 class="text-light-cream font-heading text-4xl mb-8">
           Great coffee made simple.
         </h1>
+
+        <!-- hero description -->
         <p class="text-light-cream font-body mb-9 font-thin">
           Start your mornings with the world’s best coffees. Try our expertly
           curated artisan coffees from our best roasters delivered directly to
           your door, at your schedule.
         </p>
+
+        <!-- button link to create plan -->
         <button
           class="text-light-cream text-xl w-52 h-14 bg-dark-cyan rounded-lg font-heading font-black"
           type="button"
