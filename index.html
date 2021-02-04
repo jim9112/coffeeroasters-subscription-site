@@ -41,25 +41,226 @@
         <img src="./assets/shared/mobile/icon-hamburger.svg" alt="" />
       </button>
     </header>
+    <main class="">
+      <!-- hero section -->
+      <section
+        class="bg-hero-small bg-center bg-cover rounded-lg text-center py-24 grid place-content-center mt-8"
+      >
+        <!-- hero container -->
+        <div class="w-72 h-72">
+          <!-- hero title -->
+          <h1 class="text-light-cream font-heading text-4xl mb-8">
+            Great coffee made simple.
+          </h1>
 
-    <!-- hero section -->
-    <section
-      class="bg-hero-small bg-center bg-cover rounded-lg text-center py-24 grid place-content-center mt-8"
-    >
-      <!-- hero container -->
-      <div class="w-72 h-72">
-        <!-- hero title -->
-        <h1 class="text-light-cream font-heading text-4xl mb-8">
-          Great coffee made simple.
+          <!-- hero description -->
+          <p class="text-light-cream font-body mb-9 font-thin">
+            Start your mornings with the world’s best coffees. Try our expertly
+            curated artisan coffees from our best roasters delivered directly to
+            your door, at your schedule.
+          </p>
+
+          <!-- button link to create plan -->
+          <button
+            class="text-light-cream text-xl w-52 h-14 bg-dark-cyan rounded-lg font-heading font-black"
+            type="button"
+          >
+            Create your plan
+          </button>
+        </div>
+      </section>
+
+      <!-- our collection section -->
+      <section class="text-center mt-32">
+        <h1 class="font-heading text-4xl text-grey font-black">
+          Our collection
         </h1>
 
-        <!-- hero description -->
-        <p class="text-light-cream font-body mb-9 font-thin">
-          Start your mornings with the world’s best coffees. Try our expertly
-          curated artisan coffees from our best roasters delivered directly to
-          your door, at your schedule.
-        </p>
+        <!-- coffee card container -->
+        <div class="grid grid-cols-1 gap-9 text-dark-grey-blue">
+          <!-- card 1 -->
+          <div class="grid gap-5 mt-10">
+            <img
+              class="w-48 justify-self-center"
+              src="./assets/home/desktop/image-gran-espresso.png"
+              alt="gran expresso"
+            />
+            <h2 class="font-heading text-2xl font-black">Gran Espresso</h2>
+            <p class="font-body mb-9">
+              Light and flavorful blend with cocoaç and black pepper for an
+              intense experience
+            </p>
+          </div>
 
+          <!-- card 2 -->
+          <div class="grid gap-5">
+            <img
+              class="w-48 justify-self-center"
+              src="./assets/home/desktop/image-planalto.png"
+              alt="planalto"
+            />
+            <h2 class="font-heading text-2xl font-black">Planalto</h2>
+            <p class="font-body mb-9">
+              Brazilian dark roast with rich and velvety body, and hints of
+              fruits and nuts
+            </p>
+          </div>
+
+          <!-- card 3 -->
+          <div class="grid gap-5">
+            <img
+              class="w-48 justify-self-center"
+              src="./assets/home/desktop/image-piccollo.png"
+              alt="piccollo"
+            />
+            <h2 class="font-heading text-2xl font-black">Piccollo</h2>
+            <p class="font-body mb-9">
+              Mild and smooth blend featuring notes of toasted almond and dried
+              cherry
+            </p>
+          </div>
+
+          <!-- card 4 -->
+          <div class="grid gap-5">
+            <img
+              class="w-48 justify-self-center"
+              src="./assets/home/desktop/image-danche.png"
+              alt="danche"
+            />
+            <h2 class="font-heading text-2xl font-black">Danche</h2>
+            <p class="font-body mb-9">
+              Ethiopian hand-harvested blend densely packed with vibrant fruit
+              notes
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- why choose us section -->
+      <section class="mb-10 flex flex-col">
+        <div class="text-center rounded-lg relative">
+          <!-- black div mask -->
+          <div
+            class="absolute bg-black top-60 h-screen w-full rounded-b-lg opacity-80"
+          ></div>
+
+          <!-- section header -->
+          <div
+            class="bg-dark-grey-blue px-6 pt-16 pb-11 rounded-t-lg relative z-10"
+          >
+            <h1 class="text-3xl font-heading font-black text-light-cream pb-6">
+              Why choose us?
+            </h1>
+            <p class="font-body text-light-cream">
+              A large part of our role is choosing which particular coffees will
+              be featured in our range. This means working closely with the best
+              coffee growers to give you a more impactful experience on every
+              level.
+            </p>
+          </div>
+
+          <!-- card container -->
+          <div class="grid grid-cols-1 gap-6 px-8 pt-11 relative z-20">
+            <!-- quality card -->
+            <div
+              class="bg-dark-cyan grid grid-cols-1 px-8 pt-10 pb-8 rounded-lg"
+            >
+              <img
+                class="justify-self-center"
+                src="./assets/home/desktop/icon-coffee-bean.svg"
+                alt="coffee bean"
+              />
+              <div class="mt-14">
+                <h3
+                  class="mb-6 text-light-cream font-heading text-2xl font-black"
+                >
+                  Best quality
+                </h3>
+                <p class="text-light-cream font-body">
+                  Discover an endless variety of the world’s best artisan coffee
+                  from each of our roasters.
+                </p>
+              </div>
+            </div>
+
+            <!-- benifits card -->
+            <div
+              class="bg-dark-cyan grid grid-cols-1 px-8 pt-10 pb-8 rounded-lg"
+            >
+              <img
+                class="justify-self-center"
+                src="./assets/home/desktop/icon-gift.svg"
+                alt="gift"
+              />
+              <div class="mt-14">
+                <h3
+                  class="mb-6 text-light-cream font-heading text-2xl font-black"
+                >
+                  Exclusive benefits
+                </h3>
+                <p class="text-light-cream font-body">
+                  Special offers and swag when you subscribe, including 30% off
+                  your first shipment.
+                </p>
+              </div>
+            </div>
+
+            <!-- deliver card -->
+            <div
+              class="bg-dark-cyan grid grid-cols-1 px-8 pt-10 pb-8 rounded-lg"
+            >
+              <img
+                class="justify-self-center"
+                src="./assets/home/desktop/icon-truck.svg"
+                alt="truck"
+              />
+              <div class="mt-14">
+                <h3
+                  class="mb-6 text-light-cream font-heading text-2xl font-black"
+                >
+                  Free shipping
+                </h3>
+                <p class="text-light-cream font-body">
+                  We cover the cost and coffee is delivered fast. Peak
+                  freshness: guaranteed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- how it works section -->
+      <section>
+        <h3>How it works</h3>
+        <div>
+          <div>
+            <h1>01</h1>
+            <h3>Pick your coffee</h3>
+            <p>
+              Select from our evolving range of artisan coffees. Our beans are
+              ethically sourced and we pay fair prices for them. There are new
+              coffees in all profiles every month for you to try out.
+            </p>
+          </div>
+          <div>
+            <h1>02</h1>
+            <h3>Choose the frequency</h3>
+            <p>
+              Customize your order frequency, quantity, even your roast style
+              and grind type. Pause, skip or cancel your subscription with no
+              commitment through our online portal.
+            </p>
+          </div>
+          <div>
+            <h1>03</h1>
+            <h3>Receive and enjoy!</h3>
+            <p>
+              We ship your package within 48 hours, freshly roasted. Sit back
+              and enjoy award-winning world-class coffees curated to provide a
+              distinct tasting experience.
+            </p>
+          </div>
+        </div>
         <!-- button link to create plan -->
         <button
           class="text-light-cream text-xl w-52 h-14 bg-dark-cyan rounded-lg font-heading font-black"
@@ -67,156 +268,9 @@
         >
           Create your plan
         </button>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- our collection section -->
-    <section class="text-center mt-32">
-      <h1 class="font-heading text-4xl text-grey font-black">Our collection</h1>
-
-      <!-- coffee card container -->
-      <div class="grid grid-cols-1 gap-9 text-dark-grey-blue">
-        <!-- card 1 -->
-        <div class="grid gap-5 mt-10">
-          <img
-            class="w-48 justify-self-center"
-            src="./assets/home/desktop/image-gran-espresso.png"
-            alt="gran expresso"
-          />
-          <h2 class="font-heading text-2xl font-black">Gran Espresso</h2>
-          <p class="font-body mb-9">
-            Light and flavorful blend with cocoaç and black pepper for an
-            intense experience
-          </p>
-        </div>
-
-        <!-- card 2 -->
-        <div class="grid gap-5">
-          <img
-            class="w-48 justify-self-center"
-            src="./assets/home/desktop/image-planalto.png"
-            alt="planalto"
-          />
-          <h2 class="font-heading text-2xl font-black">Planalto</h2>
-          <p class="font-body mb-9">
-            Brazilian dark roast with rich and velvety body, and hints of fruits
-            and nuts
-          </p>
-        </div>
-
-        <!-- card 3 -->
-        <div class="grid gap-5">
-          <img
-            class="w-48 justify-self-center"
-            src="./assets/home/desktop/image-piccollo.png"
-            alt="piccollo"
-          />
-          <h2 class="font-heading text-2xl font-black">Piccollo</h2>
-          <p class="font-body mb-9">
-            Mild and smooth blend featuring notes of toasted almond and dried
-            cherry
-          </p>
-        </div>
-
-        <!-- card 4 -->
-        <div class="grid gap-5">
-          <img
-            class="w-48 justify-self-center"
-            src="./assets/home/desktop/image-danche.png"
-            alt="danche"
-          />
-          <h2 class="font-heading text-2xl font-black">Danche</h2>
-          <p class="font-body mb-9">
-            Ethiopian hand-harvested blend densely packed with vibrant fruit
-            notes
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- why choose us section -->
-    <section class="text-center rounded-lg bg-gray-900">
-      <div class="bg-dark-grey-blue px-6 pt-16 rounded-t-lg">
-        <h1 class="text-3xl font-heading font-black text-light-cream pb-6">
-          Why choose us?
-        </h1>
-        <p class="font-body text-light-cream">
-          A large part of our role is choosing which particular coffees will be
-          featured in our range. This means working closely with the best coffee
-          growers to give you a more impactful experience on every level.
-        </p>
-      </div>
-      <div>
-        <div>
-          <img
-            src="./assets/home/desktop/icon-coffee-bean.svg"
-            alt="coffee bean"
-          />
-          <h3>Best quality</h3>
-          <p>
-            Discover an endless variety of the world’s best artisan coffee from
-            each of our roasters.
-          </p>
-        </div>
-        <div>
-          <img src="./assets/home/desktop/icon-gift.svg" alt="gift" />
-        </div>
-        <h3>Exclusive benefits</h3>
-        <p>
-          Special offers and swag when you subscribe, including 30% off your
-          first shipment.
-        </p>
-        <div>
-          <img src="./assets/home/desktop/icon-truck.svg" alt="truck" />
-          <h3>Free shipping</h3>
-          <p>
-            We cover the cost and coffee is delivered fast. Peak freshness:
-            guaranteed.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- how it works section -->
-    <section>
-      <h3>How it works</h3>
-      <div>
-        <div>
-          <h1>01</h1>
-          <h3>Pick your coffee</h3>
-          <p>
-            Select from our evolving range of artisan coffees. Our beans are
-            ethically sourced and we pay fair prices for them. There are new
-            coffees in all profiles every month for you to try out.
-          </p>
-        </div>
-        <div>
-          <h1>02</h1>
-          <h3>Choose the frequency</h3>
-          <p>
-            Customize your order frequency, quantity, even your roast style and
-            grind type. Pause, skip or cancel your subscription with no
-            commitment through our online portal.
-          </p>
-        </div>
-        <div>
-          <h1>03</h1>
-          <h3>Receive and enjoy!</h3>
-          <p>
-            We ship your package within 48 hours, freshly roasted. Sit back and
-            enjoy award-winning world-class coffees curated to provide a
-            distinct tasting experience.
-          </p>
-        </div>
-      </div>
-      <!-- button link to create plan -->
-      <button
-        class="text-light-cream text-xl w-52 h-14 bg-dark-cyan rounded-lg font-heading font-black"
-        type="button"
-      >
-        Create your plan
-      </button>
-    </section>
     <footer class="bg-dark-grey-blue">
       <img
         class="w-40 h-5"
