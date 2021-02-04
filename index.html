@@ -84,70 +84,82 @@
       </section>
 
       <!-- our collection section -->
-      <section class="text-center mt-32">
-        <h1 class="font-heading text-4xl text-grey font-black">
+      <section class="text-center mt-32 relative">
+        <h1 class="font-heading text-4xl text-grey font-black sm:text-8xl">
           Our collection
         </h1>
 
         <!-- coffee card container -->
-        <div class="grid grid-cols-1 gap-9 text-dark-grey-blue">
+        <div
+          class="grid grid-cols-1 gap-9 text-dark-grey-blue sm:relative sm:-top-16"
+        >
           <!-- card 1 -->
-          <div class="grid gap-5 mt-10">
+          <div class="grid gap-y-5 mt-10 sm:grid-cols-2 sm:text-left">
             <img
-              class="w-48 justify-self-center"
+              class="w-48 justify-self-center sm:w-60 sm:row-start-1 sm:row-span-2 sm:col-start-1 sm:col-span-1 sm:justify-self-end"
               src="./assets/home/desktop/image-gran-espresso.png"
               alt="gran expresso"
             />
-            <h2 class="font-heading text-2xl font-black text-dark-grey-blue">
+            <h2
+              class="font-heading text-2xl font-black text-dark-grey-blue sm:w-72"
+            >
               Gran Espresso
             </h2>
-            <p class="font-body mb-9 text-dark-grey-blue">
+            <p class="font-body mb-9 text-dark-grey-blue sm:w-72">
               Light and flavorful blend with cocoaç and black pepper for an
               intense experience
             </p>
           </div>
 
           <!-- card 2 -->
-          <div class="grid gap-5">
+          <div class="grid gap-y-5 mt-10 sm:grid-cols-2 sm:text-left">
             <img
-              class="w-48 justify-self-center"
+              class="w-48 justify-self-center sm:w-60 sm:row-start-1 sm:row-span-2 sm:col-start-1 sm:col-span-1 sm:justify-self-end"
               src="./assets/home/desktop/image-planalto.png"
               alt="planalto"
             />
-            <h2 class="font-heading text-2xl font-black">Planalto</h2>
-            <p class="font-body mb-9">
+            <h2
+              class="font-heading text-2xl font-black text-dark-grey-blue sm:w-72"
+            >
+              Planalto
+            </h2>
+            <p class="font-body mb-9 text-dark-grey-blue sm:w-72">
               Brazilian dark roast with rich and velvety body, and hints of
               fruits and nuts
             </p>
           </div>
 
           <!-- card 3 -->
-          <div class="grid gap-5">
+          <div class="grid gap-y-5 mt-10 sm:grid-cols-2 sm:text-left">
             <img
-              class="w-48 justify-self-center"
+              class="w-48 justify-self-center sm:w-60 sm:row-start-1 sm:row-span-2 sm:col-start-1 sm:col-span-1 sm:justify-self-end"
               src="./assets/home/desktop/image-piccollo.png"
               alt="piccollo"
             />
-            <h2 class="font-heading text-2xl font-black text-dark-grey-blue">
+            <h2
+              class="font-heading text-2xl font-black text-dark-grey-blue sm:w-72"
+            >
               Piccollo
             </h2>
-            <p class="font-body mb-9 text-dark-grey-blue">
+            <p class="font-body mb-9 text-dark-grey-blue sm:w-72">
               Mild and smooth blend featuring notes of toasted almond and dried
               cherry
             </p>
           </div>
 
           <!-- card 4 -->
-          <div class="grid gap-5">
+          <div class="grid gap-y-5 mt-10 sm:grid-cols-2 sm:text-left">
             <img
-              class="w-48 justify-self-center"
+              class="w-48 justify-self-center sm:w-60 sm:row-start-1 sm:row-span-2 sm:col-start-1 sm:col-span-1 sm:justify-self-end"
               src="./assets/home/desktop/image-danche.png"
               alt="danche"
             />
-            <h2 class="font-heading text-2xl font-black text-dark-grey-blue">
+            <h2
+              class="font-heading text-2xl font-black text-dark-grey-blue sm:w-72"
+            >
               Danche
             </h2>
-            <p class="font-body mb-9 text-dark-grey-blue">
+            <p class="font-body mb-9 text-dark-grey-blue sm:w-72">
               Ethiopian hand-harvested blend densely packed with vibrant fruit
               notes
             </p>
@@ -160,7 +172,7 @@
         <div class="text-center rounded-lg relative">
           <!-- black div mask -->
           <div
-            class="absolute bg-black top-60 h-screen w-full rounded-b-lg opacity-80"
+            class="absolute bg-black top-60 h-screen w-full rounded-b-lg opacity-80 sm: hidden"
           ></div>
 
           <!-- section header -->
