@@ -20,6 +20,7 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         'hero-small': "url('assets/home/mobile/image-hero-coffeepress.jpg')",
+        'hero-med': "url('assets/home/tablet/image-hero-coffeepress.jpg')",
       }),
     },
   },

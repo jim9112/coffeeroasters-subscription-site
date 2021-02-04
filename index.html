@@ -19,6 +19,7 @@
 
     <title>Frontend Mentor | Coffeeroasters subscription site</title>
   </head>
+
   <body class="px-6 py-8">
     <!-- header -->
     <header class="flex items-center relative">
@@ -30,10 +31,20 @@
       />
 
       <!-- nav bar (desktop and tablet only) -->
-      <nav class="inline hidden">
-        <a href="#">Home</a>
-        <a href="#">About us</a>
-        <a href="#">Create your plan</a>
+      <nav class="hidden sm:inline inset-y-0 right-0 absolute">
+        <a
+          class="font-body text-grey text-xs font-bold tracking-wider mr-8"
+          href="#"
+          >Home</a
+        >
+        <a
+          class="font-body text-grey text-xs font-bold tracking-wider mr-8"
+          href="#"
+          >About us</a
+        >
+        <a class="font-body text-grey text-xs font-bold tracking-wider" href="#"
+          >Create your plan</a
+        >
       </nav>
 
       <!-- hamburger menu button (mobile only) -->
@@ -44,12 +55,14 @@
     <main class="">
       <!-- hero section -->
       <section
-        class="bg-hero-small bg-center bg-cover rounded-lg text-center py-24 grid place-content-center mt-8"
+        class="bg-hero-small bg-center bg-cover rounded-lg text-center py-24 grid place-content-center mt-8 sm:bg-hero-med sm:place-content-start sm:text-left sm:pl-14"
       >
         <!-- hero container -->
-        <div class="w-72 h-72">
+        <div class="w-72 h-72 sm:w-96">
           <!-- hero title -->
-          <h1 class="text-light-cream font-heading text-4xl mb-8">
+          <h1
+            class="text-light-cream font-heading font-black text-4xl mb-8 sm:text-5xl"
+          >
             Great coffee made simple.
           </h1>
 
@@ -300,18 +313,23 @@
       </section>
     </main>
 
-    <footer class="bg-dark-grey-blue">
+    <footer
+      class="bg-dark-grey-blue grid grid-cols-1 justify-items-center items-center gap-14 py-16"
+    >
+      <!-- 217x24 -->
       <img
-        class="w-40 h-5"
+        class="w-52 h-6"
         src="./assets/shared/desktop/logo2.svg"
         alt="Coffeeroasters logo"
       />
-      <nav>
+      <nav
+        class="grid grid-cols-1 justify-items-center items-center gap-6 font-body text-grey text-xs"
+      >
         <a href="">Home</a>
         <a href="">About us</a>
         <a href="">Create your plan</a>
       </nav>
-      <div>
+      <div class="grid grid-cols-3 gap-6">
         <a href=""
           ><img
             src="./assets/shared/desktop/icon-facebook.svg"

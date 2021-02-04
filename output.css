@@ -2200,6 +2200,10 @@ video {
   background-image: url('assets/home/mobile/image-hero-coffeepress.jpg');
 }
 
+.bg-hero-med {
+  background-image: url('assets/home/tablet/image-hero-coffeepress.jpg');
+}
+
 .from-dark-cyan {
   --tw-gradient-from: #0E8784;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(14, 135, 132, 0));
@@ -20904,6 +20908,10 @@ video {
     background-image: url('assets/home/mobile/image-hero-coffeepress.jpg');
   }
 
+  .sm\:bg-hero-med {
+    background-image: url('assets/home/tablet/image-hero-coffeepress.jpg');
+  }
+
   .sm\:from-dark-cyan {
     --tw-gradient-from: #0E8784;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(14, 135, 132, 0));
@@ -39528,6 +39536,10 @@ video {
 
   .md\:bg-hero-small {
     background-image: url('assets/home/mobile/image-hero-coffeepress.jpg');
+  }
+
+  .md\:bg-hero-med {
+    background-image: url('assets/home/tablet/image-hero-coffeepress.jpg');
   }
 
   .md\:from-dark-cyan {
@@ -58156,6 +58168,10 @@ video {
     background-image: url('assets/home/mobile/image-hero-coffeepress.jpg');
   }
 
+  .lg\:bg-hero-med {
+    background-image: url('assets/home/tablet/image-hero-coffeepress.jpg');
+  }
+
   .lg\:from-dark-cyan {
     --tw-gradient-from: #0E8784;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(14, 135, 132, 0));
@@ -76782,6 +76798,10 @@ video {
     background-image: url('assets/home/mobile/image-hero-coffeepress.jpg');
   }
 
+  .xl\:bg-hero-med {
+    background-image: url('assets/home/tablet/image-hero-coffeepress.jpg');
+  }
+
   .xl\:from-dark-cyan {
     --tw-gradient-from: #0E8784;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(14, 135, 132, 0));
@@ -95406,6 +95426,10 @@ video {
 
   .\32xl\:bg-hero-small {
     background-image: url('assets/home/mobile/image-hero-coffeepress.jpg');
+  }
+
+  .\32xl\:bg-hero-med {
+    background-image: url('assets/home/tablet/image-hero-coffeepress.jpg');
   }
 
   .\32xl\:from-dark-cyan {
