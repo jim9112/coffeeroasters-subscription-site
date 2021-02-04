@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
@@ -11,6 +13,9 @@ module.exports = {
       'dark-grey-blue': '#333D4B',
       'light-cream': '#FEFCF7',
       grey: '#83888F',
+      'pale-orange': '#0E8784',
+      black: colors.black,
+      gray: colors.gray,
     },
     extend: {
       backgroundImage: (theme) => ({
