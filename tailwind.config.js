@@ -26,6 +26,10 @@ module.exports = {
         'hero-small': "url('assets/home/mobile/image-hero-coffeepress.jpg')",
         'hero-med': "url('assets/home/tablet/image-hero-coffeepress.jpg')",
         'hero-lg': "url('assets/home/desktop/image-hero-coffeepress.jpg')",
+        'about-hero-small':
+          "url('assets/about/mobile/image-hero-whitecup.jpg')",
+        'about-hero-med': "url('assets/about/tablet/image-hero-whitecup.jpg')",
+        'about-hero-lg': "url('assets/about/desktop/image-hero-whitecup.jpg')",
       }),
     },
   },

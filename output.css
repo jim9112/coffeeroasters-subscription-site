@@ -2190,6 +2190,18 @@ video {
   background-image: url('assets/home/desktop/image-hero-coffeepress.jpg');
 }
 
+.bg-about-hero-small {
+  background-image: url('assets/about/mobile/image-hero-whitecup.jpg');
+}
+
+.bg-about-hero-med {
+  background-image: url('assets/about/tablet/image-hero-whitecup.jpg');
+}
+
+.bg-about-hero-lg {
+  background-image: url('assets/about/desktop/image-hero-whitecup.jpg');
+}
+
 .from-dark-cyan {
   --tw-gradient-from: #0E8784;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(14, 135, 132, 0));
@@ -20872,6 +20884,18 @@ video {
     background-image: url('assets/home/desktop/image-hero-coffeepress.jpg');
   }
 
+  .tablet\:bg-about-hero-small {
+    background-image: url('assets/about/mobile/image-hero-whitecup.jpg');
+  }
+
+  .tablet\:bg-about-hero-med {
+    background-image: url('assets/about/tablet/image-hero-whitecup.jpg');
+  }
+
+  .tablet\:bg-about-hero-lg {
+    background-image: url('assets/about/desktop/image-hero-whitecup.jpg');
+  }
+
   .tablet\:from-dark-cyan {
     --tw-gradient-from: #0E8784;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(14, 135, 132, 0));
@@ -39474,6 +39498,18 @@ video {
 
   .comp\:bg-hero-lg {
     background-image: url('assets/home/desktop/image-hero-coffeepress.jpg');
+  }
+
+  .comp\:bg-about-hero-small {
+    background-image: url('assets/about/mobile/image-hero-whitecup.jpg');
+  }
+
+  .comp\:bg-about-hero-med {
+    background-image: url('assets/about/tablet/image-hero-whitecup.jpg');
+  }
+
+  .comp\:bg-about-hero-lg {
+    background-image: url('assets/about/desktop/image-hero-whitecup.jpg');
   }
 
   .comp\:from-dark-cyan {
