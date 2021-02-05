@@ -172,12 +172,12 @@
         <div class="text-center rounded-lg relative">
           <!-- black div mask -->
           <div
-            class="absolute bg-black top-60 h-screen w-full rounded-b-lg opacity-80 sm: hidden"
+            class="absolute bg-black top-60 h-screen w-full rounded-b-lg opacity-80 sm:hidden"
           ></div>
 
           <!-- section header -->
           <div
-            class="bg-dark-grey-blue px-6 pt-16 pb-11 rounded-t-lg relative z-10"
+            class="bg-dark-grey-blue px-6 pt-16 pb-11 rounded-t-lg relative z-10 sm:pb-96 sm:rounded-b-lg"
           >
             <h1 class="text-3xl font-heading font-black text-light-cream pb-6">
               Why choose us?
@@ -191,17 +191,19 @@
           </div>
 
           <!-- card container -->
-          <div class="grid grid-cols-1 gap-6 px-8 pt-11 relative z-20">
+          <div
+            class="grid grid-cols-1 gap-6 px-8 pt-11 relative z-20 sm:-mt-96"
+          >
             <!-- quality card -->
             <div
-              class="bg-dark-cyan grid grid-cols-1 px-8 pt-10 pb-8 rounded-lg"
+              class="bg-dark-cyan grid grid-cols-1 px-8 pt-10 pb-8 rounded-lg sm:grid-cols-3 sm:text-left sm:items-center sm:pb-10"
             >
               <img
                 class="justify-self-center"
                 src="./assets/home/desktop/icon-coffee-bean.svg"
                 alt="coffee bean"
               />
-              <div class="mt-14">
+              <div class="mt-14 sm:mt-0 sm:col-span-2">
                 <h3
                   class="mb-6 text-light-cream font-heading text-2xl font-black"
                 >
@@ -216,14 +218,14 @@
 
             <!-- benifits card -->
             <div
-              class="bg-dark-cyan grid grid-cols-1 px-8 pt-10 pb-8 rounded-lg"
+              class="bg-dark-cyan grid grid-cols-1 px-8 pt-10 pb-8 rounded-lg sm:grid-cols-3 sm:text-left sm:items-center sm:pb-10"
             >
               <img
                 class="justify-self-center"
                 src="./assets/home/desktop/icon-gift.svg"
                 alt="gift"
               />
-              <div class="mt-14">
+              <div class="mt-14 sm:mt-0 sm:col-span-2">
                 <h3
                   class="mb-6 text-light-cream font-heading text-2xl font-black"
                 >
@@ -238,14 +240,14 @@
 
             <!-- deliver card -->
             <div
-              class="bg-dark-cyan grid grid-cols-1 px-8 pt-10 pb-8 rounded-lg"
+              class="bg-dark-cyan grid grid-cols-1 px-8 pt-10 pb-8 rounded-lg sm:grid-cols-3 sm:text-left sm:items-center sm:pb-10"
             >
               <img
                 class="justify-self-center"
                 src="./assets/home/desktop/icon-truck.svg"
                 alt="truck"
               />
-              <div class="mt-14">
+              <div class="mt-14 sm:mt-0 sm:col-span-2">
                 <h3
                   class="mb-6 text-light-cream font-heading text-2xl font-black"
                 >
@@ -260,6 +262,7 @@
           </div>
         </div>
       </section>
+
       <!-- how it works section -->
       <section class="py-28">
         <h3 class="text-grey font-heading font-black text-2xl text-center">
