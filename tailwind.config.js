@@ -17,6 +17,10 @@ module.exports = {
       black: colors.black,
       gray: colors.gray,
     },
+    screens: {
+      tablet: '641px',
+      comp: '1008px',
+    },
     extend: {
       backgroundImage: (theme) => ({
         'hero-small': "url('assets/home/mobile/image-hero-coffeepress.jpg')",

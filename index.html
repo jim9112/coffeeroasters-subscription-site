@@ -20,18 +20,18 @@
     <title>Frontend Mentor | Coffeeroasters subscription site</title>
   </head>
 
-  <body class="px-6 py-8 md:px-20">
+  <body class="px-6 py-8 comp:px-20 comp:pb-24">
     <!-- header -->
     <header class="flex items-center relative">
       <!-- logo/link home -->
       <img
-        class="w-40 h-5 sm:w-60 sm:h-7"
+        class="w-40 h-5 tablet:w-60 tablet:h-7"
         src="./assets/shared/desktop/logo.svg"
         alt="Coffeeroasters logo"
       />
 
       <!-- nav bar (desktop and tablet only) -->
-      <nav class="hidden sm:inline inset-y-0 right-0 absolute">
+      <nav class="hidden tablet:inline inset-y-0 right-0 absolute">
         <a
           class="font-body text-grey text-xs font-bold tracking-wider mr-8"
           href="#"
@@ -48,20 +48,20 @@
       </nav>
 
       <!-- hamburger menu button (mobile only) -->
-      <button class="inset-y-0 right-0 absolute sm:hidden">
+      <button class="inset-y-0 right-0 absolute tablet:hidden">
         <img src="./assets/shared/mobile/icon-hamburger.svg" alt="" />
       </button>
     </header>
     <main class="">
       <!-- hero section -->
       <section
-        class="bg-hero-small bg-center bg-cover rounded-lg text-center py-24 grid place-content-center mt-8 sm:bg-hero-med sm:place-content-start sm:text-left sm:pl-14 md:bg-hero-lg md:pl-20 md:py-28"
+        class="bg-hero-small bg-center bg-cover rounded-lg text-center py-24 grid place-content-center mt-8 tablet:bg-hero-med tablet:place-content-start tablet:text-left tablet:pl-14 comp:bg-hero-lg comp:pl-20 comp:py-28"
       >
         <!-- hero container -->
-        <div class="w-72 h-72 sm:w-96 md:w-2/4 md:h-auto">
+        <div class="w-72 h-72 tablet:w-96 comp:w-2/4 comp:h-auto">
           <!-- hero title -->
           <h1
-            class="text-light-cream font-heading font-black text-4xl mb-8 sm:text-5xl md:text-7xl"
+            class="text-light-cream font-heading font-black text-4xl mb-8 tablet:text-5xl comp:text-7xl"
           >
             Great coffee made simple.
           </h1>
@@ -85,81 +85,99 @@
 
       <!-- our collection section -->
       <section class="text-center mt-32 relative">
-        <h1 class="font-heading text-4xl text-grey font-black sm:text-8xl">
+        <h1
+          class="font-heading text-4xl text-grey font-black tablet:text-8xl comp:text-9xl"
+        >
           Our collection
         </h1>
 
         <!-- coffee card container -->
         <div
-          class="grid grid-cols-1 gap-9 text-dark-grey-blue sm:relative sm:-top-16"
+          class="grid grid-cols-1 gap-9 text-dark-grey-blue tablet:relative tablet:-top-16 comp:grid-cols-4"
         >
           <!-- card 1 -->
-          <div class="grid gap-y-5 mt-10 sm:grid-cols-2 sm:text-left">
+          <div
+            class="grid gap-y-5 mt-10 tablet:grid-cols-2 tablet:text-left comp:grid-cols-1 comp:text-center comp:justify-items-center"
+          >
             <img
-              class="w-48 justify-self-center sm:w-60 sm:row-start-1 sm:row-span-2 sm:col-start-1 sm:col-span-1 sm:justify-self-end"
+              class="w-48 justify-self-center tablet:w-60 tablet:row-start-1 tablet:row-span-2 tablet:col-start-1 tablet:col-span-1 tablet:justify-self-end comp:justify-self-center"
               src="./assets/home/desktop/image-gran-espresso.png"
               alt="gran expresso"
             />
             <h2
-              class="font-heading text-2xl font-black text-dark-grey-blue sm:w-72"
+              class="font-heading text-2xl font-black text-dark-grey-blue tablet:w-72 comp:w-auto"
             >
               Gran Espresso
             </h2>
-            <p class="font-body mb-9 text-dark-grey-blue sm:w-72">
+            <p
+              class="font-body mb-9 text-dark-grey-blue tablet:w-72 comp:w-auto"
+            >
               Light and flavorful blend with cocoaç and black pepper for an
               intense experience
             </p>
           </div>
 
           <!-- card 2 -->
-          <div class="grid gap-y-5 mt-10 sm:grid-cols-2 sm:text-left">
+          <div
+            class="grid gap-y-5 mt-10 tablet:grid-cols-2 tablet:text-left comp:grid-cols-1 comp:text-center comp:justify-items-center"
+          >
             <img
-              class="w-48 justify-self-center sm:w-60 sm:row-start-1 sm:row-span-2 sm:col-start-1 sm:col-span-1 sm:justify-self-end"
+              class="w-48 justify-self-center tablet:w-60 tablet:row-start-1 tablet:row-span-2 tablet:col-start-1 tablet:col-span-1 tablet:justify-self-end comp:justify-self-center"
               src="./assets/home/desktop/image-planalto.png"
               alt="planalto"
             />
             <h2
-              class="font-heading text-2xl font-black text-dark-grey-blue sm:w-72"
+              class="font-heading text-2xl font-black text-dark-grey-blue tablet:w-72 comp:w-auto"
             >
               Planalto
             </h2>
-            <p class="font-body mb-9 text-dark-grey-blue sm:w-72">
+            <p
+              class="font-body mb-9 text-dark-grey-blue tablet:w-72 comp:w-auto"
+            >
               Brazilian dark roast with rich and velvety body, and hints of
               fruits and nuts
             </p>
           </div>
 
           <!-- card 3 -->
-          <div class="grid gap-y-5 mt-10 sm:grid-cols-2 sm:text-left">
+          <div
+            class="grid gap-y-5 mt-10 tablet:grid-cols-2 tablet:text-left comp:grid-cols-1 comp:text-center comp:justify-items-center"
+          >
             <img
-              class="w-48 justify-self-center sm:w-60 sm:row-start-1 sm:row-span-2 sm:col-start-1 sm:col-span-1 sm:justify-self-end"
+              class="w-48 justify-self-center tablet:w-60 tablet:row-start-1 tablet:row-span-2 tablet:col-start-1 tablet:col-span-1 tablet:justify-self-end comp:justify-self-center"
               src="./assets/home/desktop/image-piccollo.png"
               alt="piccollo"
             />
             <h2
-              class="font-heading text-2xl font-black text-dark-grey-blue sm:w-72"
+              class="font-heading text-2xl font-black text-dark-grey-blue tablet:w-72 comp:w-auto"
             >
               Piccollo
             </h2>
-            <p class="font-body mb-9 text-dark-grey-blue sm:w-72">
+            <p
+              class="font-body mb-9 text-dark-grey-blue tablet:w-72 comp:w-auto"
+            >
               Mild and smooth blend featuring notes of toasted almond and dried
               cherry
             </p>
           </div>
 
           <!-- card 4 -->
-          <div class="grid gap-y-5 mt-10 sm:grid-cols-2 sm:text-left">
+          <div
+            class="grid gap-y-5 mt-10 tablet:grid-cols-2 tablet:text-left comp:grid-cols-1 comp:text-center comp:justify-items-center"
+          >
             <img
-              class="w-48 justify-self-center sm:w-60 sm:row-start-1 sm:row-span-2 sm:col-start-1 sm:col-span-1 sm:justify-self-end"
+              class="w-48 justify-self-center tablet:w-60 tablet:row-start-1 tablet:row-span-2 tablet:col-start-1 tablet:col-span-1 tablet:justify-self-end comp:justify-self-center"
               src="./assets/home/desktop/image-danche.png"
               alt="danche"
             />
             <h2
-              class="font-heading text-2xl font-black text-dark-grey-blue sm:w-72"
+              class="font-heading text-2xl font-black text-dark-grey-blue tablet:w-72 comp:w-auto"
             >
               Danche
             </h2>
-            <p class="font-body mb-9 text-dark-grey-blue sm:w-72">
+            <p
+              class="font-body mb-9 text-dark-grey-blue tablet:w-72 comp:w-auto"
+            >
               Ethiopian hand-harvested blend densely packed with vibrant fruit
               notes
             </p>
@@ -172,14 +190,16 @@
         <div class="text-center rounded-lg relative">
           <!-- black div mask -->
           <div
-            class="absolute bg-black top-60 h-screen w-full rounded-b-lg opacity-80 sm:hidden"
+            class="absolute bg-black top-60 h-screen w-full rounded-b-lg opacity-80 tablet:hidden"
           ></div>
 
           <!-- section header -->
           <div
-            class="bg-dark-grey-blue px-6 pt-16 pb-11 rounded-t-lg relative z-10 sm:pb-96 sm:rounded-b-lg"
+            class="bg-dark-grey-blue px-6 pt-16 pb-11 rounded-t-lg relative z-10 tablet:pb-96 tablet:rounded-b-lg comp:pb-64"
           >
-            <h1 class="text-3xl font-heading font-black text-light-cream pb-6">
+            <h1
+              class="text-3xl font-heading font-black text-light-cream pb-6 comp:text-4xl"
+            >
               Why choose us?
             </h1>
             <p class="font-body text-light-cream">
@@ -192,18 +212,18 @@
 
           <!-- card container -->
           <div
-            class="grid grid-cols-1 gap-6 px-8 pt-11 relative z-20 sm:-mt-96"
+            class="grid grid-cols-1 gap-6 px-8 pt-11 relative z-20 tablet:-mt-96 comp:grid-cols-3 comp:-mt-60"
           >
             <!-- quality card -->
             <div
-              class="bg-dark-cyan grid grid-cols-1 px-8 pt-10 pb-8 rounded-lg sm:grid-cols-3 sm:text-left sm:items-center sm:pb-10"
+              class="bg-dark-cyan grid grid-cols-1 px-8 pt-10 pb-8 rounded-lg tablet:grid-cols-3 tablet:text-left tablet:items-center tablet:pb-10 comp:grid-cols-1 comp:text-center"
             >
               <img
-                class="justify-self-center"
+                class="justify-self-center comp:mb-14"
                 src="./assets/home/desktop/icon-coffee-bean.svg"
                 alt="coffee bean"
               />
-              <div class="mt-14 sm:mt-0 sm:col-span-2">
+              <div class="mt-14 tablet:mt-0 tablet:col-span-2">
                 <h3
                   class="mb-6 text-light-cream font-heading text-2xl font-black"
                 >
@@ -218,14 +238,14 @@
 
             <!-- benifits card -->
             <div
-              class="bg-dark-cyan grid grid-cols-1 px-8 pt-10 pb-8 rounded-lg sm:grid-cols-3 sm:text-left sm:items-center sm:pb-10"
+              class="bg-dark-cyan grid grid-cols-1 px-8 pt-10 pb-8 rounded-lg tablet:grid-cols-3 tablet:text-left tablet:items-center tablet:pb-10 comp:grid-cols-1 comp:text-center"
             >
               <img
-                class="justify-self-center"
+                class="justify-self-center comp:mb-14"
                 src="./assets/home/desktop/icon-gift.svg"
                 alt="gift"
               />
-              <div class="mt-14 sm:mt-0 sm:col-span-2">
+              <div class="mt-14 tablet:mt-0 tablet:col-span-2">
                 <h3
                   class="mb-6 text-light-cream font-heading text-2xl font-black"
                 >
@@ -240,14 +260,14 @@
 
             <!-- deliver card -->
             <div
-              class="bg-dark-cyan grid grid-cols-1 px-8 pt-10 pb-8 rounded-lg sm:grid-cols-3 sm:text-left sm:items-center sm:pb-10"
+              class="bg-dark-cyan grid grid-cols-1 px-8 pt-10 pb-8 rounded-lg tablet:grid-cols-3 tablet:text-left tablet:items-center tablet:pb-10 comp:grid-cols-1 comp:text-center"
             >
               <img
-                class="justify-self-center"
+                class="justify-self-center comp:mb-14"
                 src="./assets/home/desktop/icon-truck.svg"
                 alt="truck"
               />
-              <div class="mt-14 sm:mt-0 sm:col-span-2">
+              <div class="mt-14 tablet:mt-0 tablet:col-span-2">
                 <h3
                   class="mb-6 text-light-cream font-heading text-2xl font-black"
                 >
@@ -266,17 +286,17 @@
       <!-- how it works section -->
       <section class="py-28">
         <h3
-          class="text-grey font-heading font-black text-2xl text-center sm:text-left"
+          class="text-grey font-heading font-black text-2xl text-center tablet:text-left"
         >
           How it works
         </h3>
 
         <!-- card container -->
         <div
-          class="mt-20 mb-16 grid grid-cols-1 gap-y-16 sm:grid-cols-3 sm:gap-x-2.5"
+          class="mt-20 mb-16 grid grid-cols-1 gap-y-16 tablet:grid-cols-3 tablet:gap-x-2.5 comp:gap-x-24"
         >
           <!-- card 1 -->
-          <div class="text-center grid grid-cols-1 gap-8 sm:text-left">
+          <div class="text-center grid grid-cols-1 gap-8 tablet:text-left">
             <h1 class="text-pale-orange font-heading font-black text-7xl">
               01
             </h1>
@@ -291,7 +311,7 @@
           </div>
 
           <!-- card 2 -->
-          <div class="text-center grid grid-cols-1 gap-8 sm:text-left">
+          <div class="text-center grid grid-cols-1 gap-8 tablet:text-left">
             <h1 class="text-pale-orange font-heading font-black text-7xl">
               02
             </h1>
@@ -306,7 +326,7 @@
           </div>
 
           <!-- card 3 -->
-          <div class="text-center grid grid-cols-1 gap-8 sm:text-left">
+          <div class="text-center grid grid-cols-1 gap-8 tablet:text-left">
             <h1 class="text-pale-orange font-heading font-black text-7xl">
               03
             </h1>
@@ -321,7 +341,7 @@
           </div>
         </div>
         <!-- button link to create plan -->
-        <div class="text-center sm:text-left">
+        <div class="text-center tablet:text-left">
           <button
             class="text-light-cream text-xl w-52 h-14 bg-dark-cyan rounded-lg font-heading font-black"
             type="button"
@@ -333,16 +353,16 @@
     </main>
 
     <footer
-      class="bg-dark-grey-blue grid grid-cols-1 justify-items-center items-center gap-14 py-16 sm:gap-0 sm:py-14"
+      class="bg-dark-grey-blue grid grid-cols-1 justify-items-center items-center gap-14 py-16 tablet:gap-0 tablet:py-14"
     >
       <!-- 217x24 -->
       <img
-        class="w-52 h-6 sm:w-60 sm:h-7"
+        class="w-52 h-6 tablet:w-60 tablet:h-7"
         src="./assets/shared/desktop/logo2.svg"
         alt="Coffeeroasters logo"
       />
       <nav
-        class="grid grid-cols-1 justify-items-center items-center gap-y-6 font-body text-grey text-xs sm:auto-cols-max sm:grid-flow-col sm:gap-x-8 sm:mt-8 sm:mb-16"
+        class="grid grid-cols-1 justify-items-center items-center gap-y-6 font-body text-grey text-xs tablet:auto-cols-max tablet:grid-flow-col tablet:gap-x-8 tablet:mt-8 tablet:mb-16"
       >
         <a href="">Home</a>
         <a href="">About us</a>
