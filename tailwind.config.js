@@ -21,6 +21,7 @@ module.exports = {
       backgroundImage: (theme) => ({
         'hero-small': "url('assets/home/mobile/image-hero-coffeepress.jpg')",
         'hero-med': "url('assets/home/tablet/image-hero-coffeepress.jpg')",
+        'hero-lg': "url('assets/home/desktop/image-hero-coffeepress.jpg')",
       }),
     },
   },

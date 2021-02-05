@@ -20,12 +20,12 @@
     <title>Frontend Mentor | Coffeeroasters subscription site</title>
   </head>
 
-  <body class="px-6 py-8">
+  <body class="px-6 py-8 md:px-20">
     <!-- header -->
     <header class="flex items-center relative">
       <!-- logo/link home -->
       <img
-        class="w-40 h-5"
+        class="w-40 h-5 sm:w-60 sm:h-7"
         src="./assets/shared/desktop/logo.svg"
         alt="Coffeeroasters logo"
       />
@@ -55,13 +55,13 @@
     <main class="">
       <!-- hero section -->
       <section
-        class="bg-hero-small bg-center bg-cover rounded-lg text-center py-24 grid place-content-center mt-8 sm:bg-hero-med sm:place-content-start sm:text-left sm:pl-14"
+        class="bg-hero-small bg-center bg-cover rounded-lg text-center py-24 grid place-content-center mt-8 sm:bg-hero-med sm:place-content-start sm:text-left sm:pl-14 md:bg-hero-lg md:pl-20 md:py-28"
       >
         <!-- hero container -->
-        <div class="w-72 h-72 sm:w-96">
+        <div class="w-72 h-72 sm:w-96 md:w-2/4 md:h-auto">
           <!-- hero title -->
           <h1
-            class="text-light-cream font-heading font-black text-4xl mb-8 sm:text-5xl"
+            class="text-light-cream font-heading font-black text-4xl mb-8 sm:text-5xl md:text-7xl"
           >
             Great coffee made simple.
           </h1>
@@ -265,14 +265,18 @@
 
       <!-- how it works section -->
       <section class="py-28">
-        <h3 class="text-grey font-heading font-black text-2xl text-center">
+        <h3
+          class="text-grey font-heading font-black text-2xl text-center sm:text-left"
+        >
           How it works
         </h3>
 
         <!-- card container -->
-        <div class="mt-20 mb-16 grid grid-cols-1 gap-16">
+        <div
+          class="mt-20 mb-16 grid grid-cols-1 gap-y-16 sm:grid-cols-3 sm:gap-x-2.5"
+        >
           <!-- card 1 -->
-          <div class="text-center grid grid-cols-1 gap-8">
+          <div class="text-center grid grid-cols-1 gap-8 sm:text-left">
             <h1 class="text-pale-orange font-heading font-black text-7xl">
               01
             </h1>
@@ -287,7 +291,7 @@
           </div>
 
           <!-- card 2 -->
-          <div class="text-center grid grid-cols-1 gap-8">
+          <div class="text-center grid grid-cols-1 gap-8 sm:text-left">
             <h1 class="text-pale-orange font-heading font-black text-7xl">
               02
             </h1>
@@ -302,7 +306,7 @@
           </div>
 
           <!-- card 3 -->
-          <div class="text-center grid grid-cols-1 gap-8">
+          <div class="text-center grid grid-cols-1 gap-8 sm:text-left">
             <h1 class="text-pale-orange font-heading font-black text-7xl">
               03
             </h1>
@@ -317,7 +321,7 @@
           </div>
         </div>
         <!-- button link to create plan -->
-        <div class="text-center">
+        <div class="text-center sm:text-left">
           <button
             class="text-light-cream text-xl w-52 h-14 bg-dark-cyan rounded-lg font-heading font-black"
             type="button"
@@ -329,16 +333,16 @@
     </main>
 
     <footer
-      class="bg-dark-grey-blue grid grid-cols-1 justify-items-center items-center gap-14 py-16"
+      class="bg-dark-grey-blue grid grid-cols-1 justify-items-center items-center gap-14 py-16 sm:gap-0 sm:py-14"
     >
       <!-- 217x24 -->
       <img
-        class="w-52 h-6"
+        class="w-52 h-6 sm:w-60 sm:h-7"
         src="./assets/shared/desktop/logo2.svg"
         alt="Coffeeroasters logo"
       />
       <nav
-        class="grid grid-cols-1 justify-items-center items-center gap-6 font-body text-grey text-xs"
+        class="grid grid-cols-1 justify-items-center items-center gap-y-6 font-body text-grey text-xs sm:auto-cols-max sm:grid-flow-col sm:gap-x-8 sm:mt-8 sm:mb-16"
       >
         <a href="">Home</a>
         <a href="">About us</a>
