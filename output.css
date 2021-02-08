@@ -2202,6 +2202,10 @@ video {
   background-image: url('assets/about/desktop/image-hero-whitecup.jpg');
 }
 
+.bg-about-quality-small {
+  background-image: url('assets/about/mobile/bg-quality.png');
+}
+
 .from-dark-cyan {
   --tw-gradient-from: #0E8784;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(14, 135, 132, 0));
@@ -20896,6 +20900,10 @@ video {
     background-image: url('assets/about/desktop/image-hero-whitecup.jpg');
   }
 
+  .tablet\:bg-about-quality-small {
+    background-image: url('assets/about/mobile/bg-quality.png');
+  }
+
   .tablet\:from-dark-cyan {
     --tw-gradient-from: #0E8784;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(14, 135, 132, 0));
@@ -39510,6 +39518,10 @@ video {
 
   .comp\:bg-about-hero-lg {
     background-image: url('assets/about/desktop/image-hero-whitecup.jpg');
+  }
+
+  .comp\:bg-about-quality-small {
+    background-image: url('assets/about/mobile/bg-quality.png');
   }
 
   .comp\:from-dark-cyan {

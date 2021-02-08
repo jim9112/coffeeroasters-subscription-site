@@ -30,6 +30,7 @@ module.exports = {
           "url('assets/about/mobile/image-hero-whitecup.jpg')",
         'about-hero-med': "url('assets/about/tablet/image-hero-whitecup.jpg')",
         'about-hero-lg': "url('assets/about/desktop/image-hero-whitecup.jpg')",
+        'about-quality-small': "url('assets/about/mobile/bg-quality.png')",
       }),
     },
   },
