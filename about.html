@@ -52,6 +52,8 @@
         <img src="./assets/shared/mobile/icon-hamburger.svg" alt="" />
       </button>
     </header>
+
+    <!-- main content -->
     <main>
       <!-- hero section -->
       <section
@@ -77,13 +79,25 @@
       </section>
 
       <!-- our commitment section -->
-      <section class="mt-28 mb-48">
-        <img
-          class="rounded-lg"
-          src="./assets/about/mobile/image-commitment.jpg"
-          alt="employee"
-        />
-        <div class="text-center mt-12">
+      <section
+        class="mt-28 mb-48 tablet:grid tablet:grid-cols-2 tablet:items-center tablet:mb-72"
+      >
+        <picture>
+          <source
+            media="(max-width: 640px)"
+            srcset="assets/about/mobile/image-commitment.jpg"
+          />
+          <source
+            media="(max-width: 1007px)"
+            srcset="assets/about/tablet/image-commitment.jpg"
+          />
+          <img
+            class="rounded-lg"
+            src="assets/about/desktop/image-commitment.jpg"
+            alt="employee making coffee"
+          />
+        </picture>
+        <div class="text-center mt-12 tablet:text-left tablet:mt-0">
           <h1 class="font-heading font-black text-3xl mb-7 text-dark-grey-blue">
             Our commitment
           </h1>
@@ -102,86 +116,117 @@
           </p>
         </div>
       </section>
-    </main>
 
-    <!-- uncompromising quality section -->
-    <section class="bg-dark-grey-blue rounded-lg px-6 pb-12 mt-20 mb-28">
-      <img
-        class="rounded-lg -top-20 relative"
-        src="assets/about/mobile/image-quality.jpg"
-        alt="coffee cup"
-      />
-      <div class="text-center -mt-5">
-        <h1 class="font-heading font-black text-3xl text-light-cream mb-6">
-          Uncompromising quality
+      <!-- uncompromising quality section -->
+      <section
+        class="bg-dark-grey-blue rounded-lg px-6 pb-12 mt-20 mb-28 tablet:px-16 tablet:pb-20"
+      >
+        <picture>
+          <source
+            media="(max-width: 640px)"
+            srcset="assets/about/mobile/image-quality.jpg"
+          />
+          <source
+            media="(max-width: 1007px)"
+            srcset="assets/about/tablet/image-quality.jpg"
+          />
+          <img
+            class="rounded-lg -top-20 relative tablet:m-auto tablet:-top-36"
+            src="assets/about/desktop/image-quality.jpg"
+            alt="coffee on table"
+          />
+        </picture>
+        <div class="text-center -mt-5 tablet:-mt-20">
+          <h1 class="font-heading font-black text-3xl text-light-cream mb-6">
+            Uncompromising quality
+          </h1>
+          <p class="font-body text-light-cream">
+            Although we work with growers who pay close attention to all stages
+            of harvest and processing, we employ, on our end, a rigorous quality
+            control program to avoid over-roasting or baking the coffee dry.
+            Every bag of coffee is tagged with a roast date and batch number.
+            Our goal is to roast consistent, user-friendly coffee, so that
+            brewing is easy and enjoyable.
+          </p>
+        </div>
+      </section>
+
+      <!-- our headquarters section -->
+      <section class="mb-28">
+        <h1
+          class="text-grey text-center text-2xl font-heading font-black mb-16 tablet:text-left"
+        >
+          Our headquarters
         </h1>
-        <p class="font-body text-light-cream">
-          Although we work with growers who pay close attention to all stages of
-          harvest and processing, we employ, on our end, a rigorous quality
-          control program to avoid over-roasting or baking the coffee dry. Every
-          bag of coffee is tagged with a roast date and batch number. Our goal
-          is to roast consistent, user-friendly coffee, so that brewing is easy
-          and enjoyable.
-        </p>
-      </div>
-    </section>
 
-    <!-- our headquarters section -->
-    <section class="mb-28">
-      <h1 class="text-grey text-center text-2xl font-heading font-black mb-16">
-        Our headquarters
-      </h1>
-
-      <!-- card container -->
-      <div class="grid grid-cols-1 gap-20">
-        <!-- united kingdom card -->
-        <div class="grid grid-cols-1 justify-items-center">
-          <img
-            class="mb-12"
-            src="assets/about/desktop/illustration-uk.svg"
-            alt="united kingdom"
-          />
-          <h2 class="font-heading font-black text-3xl mb-5">United Kingdom</h2>
-          <p class="flex flex-col text-center font-body text-dark-grey-blue">
-            <span>68 Asfordby Rd</span>
-            <span>Alcaston</span>
-            <span>SY6 1YA</span>
-            <span>+44 1241 918425</span>
-          </p>
+        <!-- card container -->
+        <div class="grid grid-cols-1 gap-y-20 tablet:grid-cols-3">
+          <!-- united kingdom card -->
+          <div
+            class="grid grid-cols-1 justify-items-center tablet:justify-items-start"
+          >
+            <img
+              class="mb-12"
+              src="assets/about/desktop/illustration-uk.svg"
+              alt="united kingdom"
+            />
+            <h2 class="font-heading font-black text-3xl mb-5 tablet:text-2xl">
+              United Kingdom
+            </h2>
+            <p
+              class="flex flex-col text-center font-body text-dark-grey-blue tablet:text-left"
+            >
+              <span>68 Asfordby Rd</span>
+              <span>Alcaston</span>
+              <span>SY6 1YA</span>
+              <span>+44 1241 918425</span>
+            </p>
+          </div>
+          <!-- canada card -->
+          <div
+            class="grid grid-cols-1 justify-items-center tablet:justify-items-start"
+          >
+            <img
+              class="mb-12"
+              src="assets/about/desktop/illustration-canada.svg"
+              alt="canada"
+            />
+            <h2 class="font-heading font-black text-3xl mb-5 tablet:text-2xl">
+              Canada
+            </h2>
+            <p
+              class="flex flex-col text-center font-body text-dark-grey-blue tablet:text-left"
+            >
+              <span>1528 Eglinton Avenue</span>
+              <span>Toronto</span>
+              <span>Ontario M4P 1A6</span>
+              <span>+1 416 485 2997</span>
+            </p>
+          </div>
+          <!-- austrailia card -->
+          <div
+            class="grid grid-cols-1 justify-items-center tablet:justify-items-start"
+          >
+            <img
+              class="mb-12"
+              src="assets/about/desktop/illustration-australia.svg"
+              alt="australia"
+            />
+            <h2 class="font-heading font-black text-3xl mb-5 tablet:text-2xl">
+              Australia
+            </h2>
+            <p
+              class="flex flex-col text-center font-body text-dark-grey-blue tablet:text-left"
+            >
+              <span>36 Swanston Street</span>
+              <span>Kewell</span>
+              <span>Victoria</span>
+              <span>+61 4 9928 3629</span>
+            </p>
+          </div>
         </div>
-        <!-- canada card -->
-        <div class="grid grid-cols-1 justify-items-center">
-          <img
-            class="mb-12"
-            src="assets/about/desktop/illustration-canada.svg"
-            alt="canada"
-          />
-          <h2 class="font-heading font-black text-3xl mb-5">Canada</h2>
-          <p class="flex flex-col text-center font-body text-dark-grey-blue">
-            <span>1528 Eglinton Avenue</span>
-            <span>Toronto</span>
-            <span>Ontario M4P 1A6</span>
-            <span>+1 416 485 2997</span>
-          </p>
-        </div>
-        <!-- austrailia card -->
-        <div class="grid grid-cols-1 justify-items-center">
-          <img
-            class="mb-12"
-            src="assets/about/desktop/illustration-australia.svg"
-            alt="australia"
-          />
-          <h2 class="font-heading font-black text-3xl mb-5">Australia</h2>
-          <p class="flex flex-col text-center font-body text-dark-grey-blue">
-            <span>36 Swanston Street</span>
-            <span>Kewell</span>
-            <span>Victoria</span>
-            <span>+61 4 9928 3629</span>
-          </p>
-        </div>
-      </div>
-    </section>
-
+      </section>
+    </main>
     <footer
       class="bg-dark-grey-blue grid grid-cols-1 justify-items-center items-center gap-14 py-16 tablet:gap-0 tablet:py-14"
     >
