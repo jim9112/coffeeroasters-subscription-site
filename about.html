@@ -80,7 +80,7 @@
 
       <!-- our commitment section -->
       <section
-        class="mt-28 mb-48 tablet:grid tablet:grid-cols-2 tablet:items-center tablet:mb-72"
+        class="mt-28 mb-48 tablet:grid tablet:grid-cols-2 tablet:items-center tablet:mb-72 comp:px-20"
       >
         <picture>
           <source
@@ -119,9 +119,9 @@
 
       <!-- uncompromising quality section -->
       <section
-        class="bg-dark-grey-blue rounded-lg px-6 pb-12 mt-20 mb-28 tablet:px-16 tablet:pb-20"
+        class="bg-dark-grey-blue rounded-lg px-6 pb-12 mt-20 mb-28 tablet:px-16 tablet:pb-20 comp:grid comp:grid-cols-2 comp:grid-rows-1 comp:pb-0"
       >
-        <picture>
+        <picture class="comp:col-start-2 comp:col-span-1">
           <source
             media="(max-width: 640px)"
             srcset="assets/about/mobile/image-quality.jpg"
@@ -131,12 +131,14 @@
             srcset="assets/about/tablet/image-quality.jpg"
           />
           <img
-            class="rounded-lg -top-20 relative tablet:m-auto tablet:-top-36"
+            class="rounded-lg -top-20 relative tablet:m-auto tablet:-top-36 comp:-top-20"
             src="assets/about/desktop/image-quality.jpg"
             alt="coffee on table"
           />
         </picture>
-        <div class="text-center -mt-5 tablet:-mt-20">
+        <div
+          class="text-center -mt-5 tablet:-mt-20 comp:col-start-1 comp:col-span-1 comp:row-start-1 comp:flex comp:flex-col comp:justify-center comp:text-left"
+        >
           <h1 class="font-heading font-black text-3xl text-light-cream mb-6">
             Uncompromising quality
           </h1>
@@ -152,7 +154,7 @@
       </section>
 
       <!-- our headquarters section -->
-      <section class="mb-28">
+      <section class="mb-28 comp:px-20">
         <h1
           class="text-grey text-center text-2xl font-heading font-black mb-16 tablet:text-left"
         >
@@ -228,22 +230,22 @@
       </section>
     </main>
     <footer
-      class="bg-dark-grey-blue grid grid-cols-1 justify-items-center items-center gap-14 py-16 tablet:gap-0 tablet:py-14"
+      class="bg-dark-grey-blue grid grid-cols-1 justify-items-center items-center gap-y-14 py-16 tablet:gap-0 tablet:py-14 comp:grid-cols-3 comp:px-20"
     >
       <!-- 217x24 -->
       <img
-        class="w-52 h-6 tablet:w-60 tablet:h-7"
+        class="w-52 h-6 tablet:w-60 tablet:h-7 comp:justify-self-start"
         src="./assets/shared/desktop/logo2.svg"
         alt="Coffeeroasters logo"
       />
       <nav
-        class="grid grid-cols-1 justify-items-center items-center gap-y-6 font-body text-grey text-xs tablet:auto-cols-max tablet:grid-flow-col tablet:gap-x-8 tablet:mt-8 tablet:mb-16"
+        class="grid grid-cols-1 justify-items-center items-center gap-y-6 font-body text-grey text-xs tablet:auto-cols-max tablet:grid-flow-col tablet:gap-x-8 tablet:mt-8 tablet:mb-16 comp:m-0 comp:justify-self-start"
       >
         <a href="">Home</a>
         <a href="">About us</a>
         <a href="">Create your plan</a>
       </nav>
-      <div class="grid grid-cols-3 gap-6">
+      <div class="grid grid-cols-3 gap-6 comp:justify-self-end">
         <a href=""
           ><img
             src="./assets/shared/desktop/icon-facebook.svg"
