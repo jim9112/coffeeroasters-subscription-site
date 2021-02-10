@@ -16,6 +16,7 @@ module.exports = {
       'pale-orange': '#FDD6BA',
       black: colors.black,
       gray: colors.gray,
+      'light-grey': '#F4F1EB',
     },
     screens: {
       tablet: '641px',
@@ -31,11 +32,17 @@ module.exports = {
         'about-hero-med': "url('assets/about/tablet/image-hero-whitecup.jpg')",
         'about-hero-lg': "url('assets/about/desktop/image-hero-whitecup.jpg')",
         'about-quality-small': "url('assets/about/mobile/bg-quality.png')",
+        'plan-hero-small': "url('assets/plan/mobile/image-hero-blackcup.jpg')",
+        'plan-hero-med': "url('assets/plan/tablet/image-hero-blackcup.jpg')",
+        'plan-hero-lg': "url('assets/plan/desktop/image-hero-blackcup.jpg')",
       }),
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ['checked'],
+      borderColor: ['checked'],
+    },
   },
-  plugins: [],
+  // plugins: [require('@tailwindcss/forms')],
 };

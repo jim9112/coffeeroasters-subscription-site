@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/jim9112/coffeeroasters-subscription-site#readme",
   "dependencies": {
+    "@tailwindcss/forms": "^0.2.1",
     "autoprefixer": "^10.2.4",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.0.2"

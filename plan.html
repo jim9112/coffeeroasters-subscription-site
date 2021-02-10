@@ -3,40 +3,169 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500&family=Fraunces:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
   <title>Frontend Mentor | Coffeeroasters subscription site</title>
 </head>
 
-<body>
-  Home
-  About us
-  Create your plan
+<body class="py-8 comp:px-20 comp:pb-24">
+  <header class="flex items-center relative">
+    <!-- logo/link home -->
+    <img
+      class="w-40 h-5 tablet:w-60 tablet:h-7"
+      src="./assets/shared/desktop/logo.svg"
+      alt="Coffeeroasters logo"
+    />
 
-  Create a plan
-  Build a subscription plan that best fits your needs. We offer an assortment of the best 
+    <!-- nav bar (desktop and tablet only) -->
+    <nav class="hidden tablet:inline inset-y-0 right-0 absolute">
+      <a
+        class="font-body text-grey text-xs font-bold tracking-wider mr-8"
+        href="./index.html"
+        >Home</a
+      >
+      <a
+        class="font-body text-grey text-xs font-bold tracking-wider mr-8"
+        href="./about.html"
+        >About us</a
+      >
+      <a
+        class="font-body text-grey text-xs font-bold tracking-wider"
+        href="./plan.html"
+        >Create your plan</a
+      >
+    </nav>
+
+    <!-- hamburger menu button (mobile only) -->
+    <button class="inset-y-0 right-0 absolute tablet:hidden">
+      <img src="./assets/shared/mobile/icon-hamburger.svg" alt="" />
+    </button>
+  </header>
+  <main>
+    <!-- hero section -->
+    <section
+    class=" mb-28 mx-6 bg-plan-hero-small bg-center bg-cover rounded-lg text-center py-24 px-6 grid place-content-center mt-8 tablet:bg-plan-hero-med tablet:place-content-start tablet:text-left tablet:pl-14 comp:bg-plan-hero-lg comp:pl-20 comp:py-28"
+  >
+    <!-- hero container -->
+    <div class=" tablet:w-96 comp:w-2/4 comp:h-auto">
+      <!-- hero title -->
+      <h1
+        class="text-light-cream font-heading font-black text-4xl mb-8 tablet:text-5xl comp:text-7xl"
+      >
+      Create a plan
+      </h1>
+
+      <!-- hero description -->
+      <p class="text-light-cream font-body mb-9">
+        Build a subscription plan that best fits your needs. We offer an assortment of the best 
   artisan coffees from around the globe delivered fresh to your door.
+      </p>
+    </div>
+  </section>
 
-  01
-  Pick your coffee
-  Select from our evolving range of artisan coffees. Our beans are ethically
-  sourced and we pay fair prices for them. There's new coffees in all profiles
-  every month for you to try out.
-  
-  02
-  Choose the frequency
-  Customize your order frequency, quantity, even your roast style and grind type.
-  Pause, skip or cancel your subscription with no commitment through our online portal.
-  
-  03
-  Receive and enjoy!
-  We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
-  world-class coffees curated to provide a distinct tasting experience.
+  <!-- plan details section -->
+  <section class="mb-28 py-20 px-6 bg-dark-grey-blue rounded-lg">
+    <!-- card container -->
+    <div
+      class="grid grid-cols-1 gap-y-16 tablet:grid-cols-3 tablet:gap-x-2.5 comp:gap-x-24"
+    >
+      <!-- card 1 -->
+      <div class="text-center grid grid-cols-1 gap-8 tablet:text-left">
+        <h1 class="text-pale-orange font-heading font-black text-7xl">
+          01
+        </h1>
+        <h3 class="text-2xl font-black font-heading text-light-cream">
+          Pick your coffee
+        </h3>
+        <p class="text-light-cream font-body">
+          Select from our evolving range of artisan coffees. Our beans are
+          ethically sourced and we pay fair prices for them. There are new
+          coffees in all profiles every month for you to try out.
+        </p>
+      </div>
 
-  01 Preferences
+      <!-- card 2 -->
+      <div class="text-center grid grid-cols-1 gap-8 tablet:text-left">
+        <h1 class="text-pale-orange font-heading font-black text-7xl">
+          02
+        </h1>
+        <h3 class="text-2xl font-black font-heading text-light-cream">
+          Choose the frequency
+        </h3>
+        <p class="text-light-cream font-body">
+          Customize your order frequency, quantity, even your roast style
+          and grind type. Pause, skip or cancel your subscription with no
+          commitment through our online portal.
+        </p>
+      </div>
+
+      <!-- card 3 -->
+      <div class="text-center grid grid-cols-1 gap-8 tablet:text-left">
+        <h1 class="text-pale-orange font-heading font-black text-7xl">
+          03
+        </h1>
+        <h3 class="text-2xl font-black font-heading text-light-cream">
+          Receive and enjoy!
+        </h3>
+        <p class="text-light-cream font-body">
+          We ship your package within 48 hours, freshly roasted. Sit back
+          and enjoy award-winning world-class coffees curated to provide a
+          distinct tasting experience.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- order form section -->
+  <section>
+    <form action="">
+      <fieldset>
+        
+        <legend>How do you drink your coffee?</legend>
+
+        <!-- capsule selection -->
+        <input type="radio" class="appearance-none"  name="type" id="capsule" value="Capsule">
+        <label class=" " for="capsule">
+          <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue">
+            <h2 class="font-heading font-black text-2xl mb-2">Capsule</h2>
+            <p class="font-body">Compatible with Nespresso systems and similar brewers</p>
+          </div>
+        </label>
+  
+        <!-- filter selection -->
+        <input type="radio" class=" appearance-none"  name="type" id="filter" value="Filter">
+        <label class="" for="filter">
+          <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue">
+            <h2 class="font-heading font-black text-2xl mb-2 ">Filter</h2>
+            <p class="font-body">For pour over or drip methods like Aeropress, Chemex, and V60</p> 
+          </div>
+        </label>
+  
+        <!-- espresso selection -->
+        <input type="radio" class="  appearance-none"  name="type" id="espresso" value="Espresso">
+        <label class=" " for="espresso">
+          <div class="bg-light-grey rounded-lg p-6 text-dark-grey-blue">
+            <h2 class="font-heading font-black text-2xl mb-2">Espresso</h2>
+            <p class="font-body">Dense and finely ground beans for an intense, flavorful experience</p>
+          </div>
+        </label>
+
+      </fieldset>
+    </form>
+  </section>
+  </main>
+
+
+
+  <!-- 01 Preferences
   02 Bean type
   03 Quantity
   04 Grind option
-  05 Deliveries
+  05 Deliveries -->
 
   How do you drink your coffee?
 
@@ -112,9 +241,41 @@
   Checkout
   <!-- End modal -->
 
-  Home
-  About us
-  Create your plan
+  <footer
+      class="bg-dark-grey-blue grid grid-cols-1 justify-items-center items-center gap-y-14 py-16 tablet:gap-0 tablet:py-14 comp:grid-cols-3 comp:px-20"
+    >
+      <!-- 217x24 -->
+      <img
+        class="w-52 h-6 tablet:w-60 tablet:h-7 comp:justify-self-start"
+        src="./assets/shared/desktop/logo2.svg"
+        alt="Coffeeroasters logo"
+      />
+      <nav
+        class="grid grid-cols-1 justify-items-center items-center gap-y-6 font-body text-grey text-xs tablet:auto-cols-max tablet:grid-flow-col tablet:gap-x-8 tablet:mt-8 tablet:mb-16 comp:m-0 comp:justify-self-start"
+      >
+        <a href="">Home</a>
+        <a href="">About us</a>
+        <a href="">Create your plan</a>
+      </nav>
+      <div class="grid grid-cols-3 gap-6 comp:justify-self-end">
+        <a href=""
+          ><img
+            src="./assets/shared/desktop/icon-facebook.svg"
+            alt="facebook icon"
+        /></a>
+        <a href=""
+          ><img
+            src="./assets/shared/desktop/icon-twitter.svg"
+            alt="twitter icon"
+        /></a>
+        <a href=""
+          ><img
+            src="./assets/shared/desktop/icon-instagram.svg"
+            alt="instagram icon"
+        /></a>
+      </div>
+    </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>
