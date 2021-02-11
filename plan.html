@@ -41,7 +41,7 @@
     </nav>
 
     <!-- hamburger menu button (mobile only) -->
-    <button class="inset-y-0 right-0 absolute tablet:hidden">
+    <button type="menu" class="inset-y-0 right-0 absolute tablet:hidden">
       <img src="./assets/shared/mobile/icon-hamburger.svg" alt="" />
     </button>
   </header>
@@ -121,25 +121,25 @@
   </section>
 
   <!-- order form section -->
-  <section>
+  <section class="px-6">
     <form action="">
       <fieldset>
         
-        <legend>How do you drink your coffee?</legend>
+        <legend class="font-heading font-black text-grey text-2xl mb-8 relative"><h2>How do you drink your coffee?</h2> <button type="button"><img class="right-1 top-5 absolute transform rotate-180" src="assets/plan/desktop/icon-arrow.svg" alt=""></button></legend>
 
         <!-- capsule selection -->
         <input type="radio" class="appearance-none"  name="type" id="capsule" value="Capsule">
         <label class=" " for="capsule">
-          <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue">
+          <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer">
             <h2 class="font-heading font-black text-2xl mb-2">Capsule</h2>
             <p class="font-body">Compatible with Nespresso systems and similar brewers</p>
           </div>
         </label>
   
         <!-- filter selection -->
-        <input type="radio" class=" appearance-none"  name="type" id="filter" value="Filter">
+        <input type="radio" checked class=" appearance-none"  name="type" id="filter" value="Filter">
         <label class="" for="filter">
-          <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue">
+          <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue">
             <h2 class="font-heading font-black text-2xl mb-2 ">Filter</h2>
             <p class="font-body">For pour over or drip methods like Aeropress, Chemex, and V60</p> 
           </div>
@@ -148,7 +148,7 @@
         <!-- espresso selection -->
         <input type="radio" class="  appearance-none"  name="type" id="espresso" value="Espresso">
         <label class=" " for="espresso">
-          <div class="bg-light-grey rounded-lg p-6 text-dark-grey-blue">
+          <div class="bg-light-grey rounded-lg p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue">
             <h2 class="font-heading font-black text-2xl mb-2">Espresso</h2>
             <p class="font-body">Dense and finely ground beans for an intense, flavorful experience</p>
           </div>
@@ -166,17 +166,6 @@
   03 Quantity
   04 Grind option
   05 Deliveries -->
-
-  How do you drink your coffee?
-
-  Capsule
-  Compatible with Nespresso systems and similar brewers
-
-  Filter
-  For pour over or drip methods like Aeropress, Chemex, and V60
-
-  Espresso
-  Dense and finely ground beans for an intense, flavorful experience
 
   What type of coffee?
 
