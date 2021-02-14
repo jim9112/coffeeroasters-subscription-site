@@ -123,9 +123,12 @@
   <!-- order form section -->
   <section class="px-6">
     <form action="">
-      <fieldset>
+
+
+      <!-- how do you drink your coffee fieldset -->
+      <fieldset id="coffeeStyle">
         
-        <legend class="font-heading font-black text-grey text-2xl mb-8 relative"><h2>How do you drink your coffee?</h2> <button type="button"><img class="right-1 top-5 absolute transform rotate-180" src="assets/plan/desktop/icon-arrow.svg" alt=""></button></legend>
+        <legend class="font-heading font-black text-grey text-2xl mb-8 relative w-full"><h2>How do you drink your coffee?</h2> <button type="button"><img class="right-1 top-5 absolute transform rotate-180" src="assets/plan/desktop/icon-arrow.svg" alt=""></button></legend>
 
         <!-- capsule selection -->
         <input type="radio" class="appearance-none"  name="type" id="capsule" value="Capsule">
@@ -155,7 +158,147 @@
         </label>
 
       </fieldset>
-    </form>
+
+      <!-- what type of coffee fieldset -->
+      <fieldset id="coffeeType">
+        
+        <legend class="mt-24 font-heading font-black text-grey text-2xl mb-8 relative w-full"><h2>What type of coffee?</h2> <button type="button"><img class="right-1 top-5 absolute transform rotate-180" src="assets/plan/desktop/icon-arrow.svg" alt=""></button></legend>
+
+        <!-- single origin selection -->
+        <input type="radio" checked class="appearance-none"  name="flavor" id="single-origin" value="Single Origin">
+        <label class=" " for="single-origin">
+          <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer">
+            <h2 class="font-heading font-black text-2xl mb-2">Single origin</h2>
+            <p class="font-body">Distinct, high quality coffee from a specific family-owned farm</p>
+          </div>
+        </label>
+  
+        <!-- decaf selection -->
+        <input type="radio" class=" appearance-none"  name="flavor" id="decaf" value="Decaf">
+        <label class="" for="decaf">
+          <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue">
+            <h2 class="font-heading font-black text-2xl mb-2 ">Decaf</h2>
+            <p class="font-body">Just like regular coffee, except the caffeine has been removed</p> 
+          </div>
+        </label>
+  
+        <!-- blended selection -->
+        <input type="radio" class="  appearance-none"  name="flavor" id="blended" value="Blended">
+        <label class=" " for="blended">
+          <div class="bg-light-grey rounded-lg p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue">
+            <h2 class="font-heading font-black text-2xl mb-2">Blended</h2>
+            <p class="font-body">Combination of two or three dark roasted beans of organic coffees</p>
+          </div>
+        </label>
+
+      </fieldset>
+
+       <!-- amount of coffee fieldset -->
+       <fieldset id="coffeeAmount">
+        
+        <legend class="mt-24 font-heading font-black text-grey text-2xl mb-8 relative w-full">
+          <h2>How much would you like?</h2> 
+          <button type="button">
+            <img class="right-1 top-5 absolute transform rotate-180" src="assets/plan/desktop/icon-arrow.svg" alt="">
+          </button>
+        </legend>
+
+        <!-- 250g selection -->
+        <input type="radio" checked class="appearance-none"  name="amount" id="small" value="250g">
+        <label class=" " for="small">
+          <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer">
+            <h2 class="font-heading font-black text-2xl mb-2">250g</h2>
+            <p class="font-body">Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+          </div>
+        </label>
+  
+        <!-- 500g selection -->
+        <input type="radio" class=" appearance-none"  name="amount" id="medium" value="500g">
+        <label class="" for="medium">
+          <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue">
+            <h2 class="font-heading font-black text-2xl mb-2 ">500g</h2>
+            <p class="font-body">Perfect option for a couple. Yields about 40 delectable cups.</p> 
+          </div>
+        </label>
+  
+        <!-- 1000g selection -->
+        <input type="radio" class="  appearance-none"  name="amount" id="large" value="1000g">
+        <label class=" " for="large">
+          <div class="bg-light-grey rounded-lg p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue">
+            <h2 class="font-heading font-black text-2xl mb-2">1000g</h2>
+            <p class="font-body">Perfect for offices and events. Yields about 90 delightful cups.</p>
+          </div>
+        </label>
+
+      </fieldset>
+      
+      <!-- grind fieldset -->
+      <fieldset id="coffeeGrind">
+        <legend class="mt-24 font-heading font-black text-grey text-2xl mb-8 relative w-full"><h2>Want us to grind them?</h2> <button type="button"><img class="right-1 top-5 absolute transform rotate-180" src="assets/plan/desktop/icon-arrow.svg" alt=""></button></legend>
+
+         <!-- whole bean selection -->
+         <input type="radio" checked class="appearance-none"  name="grind" id="wholebean" value="Wholebean">
+         <label class=" " for="wholebean">
+           <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer">
+             <h2 class="font-heading font-black text-2xl mb-2">Wholebean</h2>
+             <p class="font-body">Best coice to cherish the full sensory experience</p>
+           </div>
+         </label>
+
+         <!-- filter selection -->
+         <input type="radio" checked class="appearance-none"  name="grind" id="filtered" value="filter">
+         <label class=" " for="filtered">
+           <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer">
+             <h2 class="font-heading font-black text-2xl mb-2">Filter</h2>
+             <p class="font-body">For drip or pour-over coffee methods such as V60 or Aeropress</p>
+           </div>
+         </label>
+             <!-- Cafetiére selection -->
+             <input type="radio" checked class="appearance-none"  name="grind" id="cafetiere" value="Cafetiére">
+             <label class=" " for="cafetiere">
+               <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer">
+                 <h2 class="font-heading font-black text-2xl mb-2">Cafetiére</h2>
+                 <p class="font-body">Course ground beans specially suited for french press coffee</p>
+               </div>
+             </label>
+      </fieldset>
+
+       <!-- shipping frequency fieldset -->
+       <fieldset id="coffeeShipping">
+        <legend class="mt-24 font-heading font-black text-grey text-2xl mb-8 relative w-full"><h2>How often should we deliver?</h2> <button type="button"><img class="right-1 top-5 absolute transform rotate-180" src="assets/plan/desktop/icon-arrow.svg" alt=""></button></legend>
+
+         <!-- Every week selection -->
+         
+         
+         
+         
+         <input type="radio" checked class="appearance-none"  name="shipping" id="weekly" value="Weekly">
+          <label class=" " for="weekly">
+           <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer">
+             <h2 class="font-heading font-black text-2xl mb-2">Every week</h2>
+             <p class="font-body">$14.00 per shipment. Includes free first-class shipping.</p>
+           </div>
+         </label>
+
+         <!-- Every two weeks selection -->
+         <input type="radio" checked class="appearance-none"  name="shipping" id="biWeekly" value="Every 2 weeks">
+         <label class=" " for="biWeekly">
+           <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer">
+             <h2 class="font-heading font-black text-2xl mb-2">Every 2 weeks</h2>
+             <p class="font-body">$17.25 per shipment. Includes free priority shipping.</p>
+           </div>
+         </label>
+
+          <!-- Cafetiére selection -->
+            <input type="radio" checked class="appearance-none"  name="shipping" id="monthly" value="Every month">
+            <label class=" " for="monthly">
+              <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer">
+                <h2 class="font-heading font-black text-2xl mb-2">Every month</h2>
+                <p class="font-body">$22.50 per shipment. Includes free priority shipping.</p>
+              </div>
+            </label>
+      </fieldset>
+    </form> 
   </section>
   </main>
 
@@ -167,48 +310,8 @@
   04 Grind option
   05 Deliveries -->
 
-  What type of coffee?
-
-  Single origin
-  Distinct, high quality coffee from a specific family-owned farm
-
-  Decaf
-  Just like regular coffee, except the caffeine has been removed
-
-  Blended
-  Combination of two or three dark roasted beans of organic coffees
-
-  How much would you like?
-  250g
-  Perfect for the solo drinker. Yields about 12 delicious cups.
-  
-  500g
-  Perfect option for a couple. Yields about 40 delectable cups.
-
-  1000g
-  Perfect for offices and events. Yields about 90 delightful cups.
-
-  Want us to grind them?
-
-  Wholebean
-  Best choice if you cherish the full sensory experience
-
-  Filter
-  For drip or pour-over coffee methods such as V60 or Aeropress
-
-  Cafetiére
-  Course ground beans specially suited for french press coffee
-
-  How often should we deliver?
-
-  Every week
-  $14.00 per shipment. Includes free first-class shipping.
-
-  Every 2 weeks
-  $17.25 per shipment. Includes free priority shipping.
-
   Every month
-  $22.50 per shipment. Includes free priority shipping.
+  
 
   Order Summary
   “I drink coffee _____, with a _____ type of bean. _____ ground ala _____, 

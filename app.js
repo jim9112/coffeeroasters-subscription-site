@@ -1,7 +1,13 @@
 const inputs = document.querySelectorAll('input');
 
-const setCheckedStyle = () => {
-  inputs.forEach((input) => {
+const coffeTypeInputs = document.querySelectorAll('#coffeeType input');
+const coffeStyleInputs = document.querySelectorAll('#coffeeStyle input');
+const coffeAmountInputs = document.querySelectorAll('#coffeeAmount input');
+const coffeGrindInputs = document.querySelectorAll('#coffeeGrind input');
+const coffeShipping = document.querySelectorAll('#coffeeShipping input');
+
+const setCheckedStyle = (input) => {
+  input.forEach((input) => {
     const selection = input.labels[0].children[0];
     if (input.checked) {
       selection.classList.remove('bg-light-grey', 'text-dark-grey-blue');
@@ -13,14 +19,17 @@ const setCheckedStyle = () => {
   });
 };
 
-inputs.forEach((input) => {
-  input.addEventListener('input', (e) => {
-    setCheckedStyle();
-    // const selection = e.target.labels[0].children[0];
-    // selection.classList.remove('bg-light-grey');
-    // selection.classList.add('bg-dark-cyan');
-    // console.log(e.target.checked);
+function handleFieldset(fieldInput) {
+  setCheckedStyle(fieldInput);
+  fieldInput.forEach((input) => {
+    input.addEventListener('input', (e) => {
+      setCheckedStyle(fieldInput);
+    });
   });
-});
+}
 
-setCheckedStyle();
+const grindSection = handleFieldset(coffeTypeInputs);
+const styleSection = handleFieldset(coffeStyleInputs);
+const amountSection = handleFieldset(coffeAmountInputs);
+const grindTypeSection = handleFieldset(coffeGrindInputs);
+const shippingSelection = handleFieldset(coffeShipping);
