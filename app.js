@@ -1,11 +1,12 @@
 const inputs = document.querySelectorAll('input');
 
-const coffeTypeInputs = document.querySelectorAll('#coffeeType input');
-const coffeStyleInputs = document.querySelectorAll('#coffeeStyle input');
-const coffeAmountInputs = document.querySelectorAll('#coffeeAmount input');
-const coffeGrindInputs = document.querySelectorAll('#coffeeGrind input');
-const coffeShipping = document.querySelectorAll('#coffeeShipping input');
+const coffeTypeInputs = document.querySelector('#coffeeType');
+const coffeStyleInputs = document.querySelector('#coffeeStyle');
+const coffeAmountInputs = document.querySelector('#coffeeAmount');
+const coffeGrindInputs = document.querySelector('#coffeeGrind');
+const coffeShipping = document.querySelector('#coffeeShipping');
 
+// toggle background colors based on whether input is checked
 const setCheckedStyle = (input) => {
   input.forEach((input) => {
     const selection = input.labels[0].children[0];
@@ -19,13 +20,33 @@ const setCheckedStyle = (input) => {
   });
 };
 
+// toggle input display when button is clicked
+const handleDisplayToggle = (inputs, button) => {
+  if (button.getAttribute('aria-expanded') === 'true') {
+    inputs.forEach((input) => input.labels[0].classList.add('hidden'));
+    button.setAttribute('aria-expanded', 'false');
+    button.firstChild.classList.remove('rotate-180');
+  } else if (button.getAttribute('aria-expanded') === 'false') {
+    inputs.forEach((input) => input.labels[0].classList.remove('hidden'));
+    button.setAttribute('aria-expanded', 'true');
+    button.firstChild.classList.add('rotate-180');
+  }
+};
+
 function handleFieldset(fieldInput) {
-  setCheckedStyle(fieldInput);
-  fieldInput.forEach((input) => {
+  // select all needed elements in fieldset
+  const inputs = fieldInput.querySelectorAll('input');
+  const button = fieldInput.querySelector('button');
+
+  // set initial styles based on default checked
+  setCheckedStyle(inputs);
+  // add event listeners to inputs in field set
+  inputs.forEach((input) => {
     input.addEventListener('input', (e) => {
-      setCheckedStyle(fieldInput);
+      setCheckedStyle(inputs);
     });
   });
+  button.addEventListener('click', () => handleDisplayToggle(inputs, button));
 }
 
 const grindSection = handleFieldset(coffeTypeInputs);
