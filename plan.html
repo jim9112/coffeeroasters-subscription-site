@@ -12,8 +12,8 @@
   <title>Frontend Mentor | Coffeeroasters subscription site</title>
 </head>
 
-<body class="py-8 comp:px-20 comp:pb-24">
-  <header class="flex items-center relative">
+<body class="py-8 comp:px-20 comp:pb-24 bg-light-cream">
+  <header class="flex items-center relative px-6 comp:px-0">
     <!-- logo/link home -->
     <img
       class="w-40 h-5 tablet:w-60 tablet:h-7"
@@ -22,7 +22,7 @@
     />
 
     <!-- nav bar (desktop and tablet only) -->
-    <nav class="hidden tablet:inline inset-y-0 right-0 absolute">
+    <nav class="hidden tablet:inline inset-y-0 right-6 absolute">
       <a
         class="font-body text-grey text-xs font-bold tracking-wider mr-8"
         href="./index.html"
@@ -41,17 +41,20 @@
     </nav>
 
     <!-- hamburger menu button (mobile only) -->
-    <button type="menu" class="inset-y-0 right-0 absolute tablet:hidden">
+    <button type="menu" class="inset-y-0 right-6 absolute tablet:hidden">
       <img src="./assets/shared/mobile/icon-hamburger.svg" alt="" />
     </button>
   </header>
   <main>
+
     <!-- hero section -->
     <section
     class=" mb-28 mx-6 bg-plan-hero-small bg-center bg-cover rounded-lg text-center py-24 px-6 grid place-content-center mt-8 tablet:bg-plan-hero-med tablet:place-content-start tablet:text-left tablet:pl-14 comp:bg-plan-hero-lg comp:pl-20 comp:py-28"
   >
+
     <!-- hero container -->
     <div class=" tablet:w-96 comp:w-2/4 comp:h-auto">
+
       <!-- hero title -->
       <h1
         class="text-light-cream font-heading font-black text-4xl mb-8 tablet:text-5xl comp:text-7xl"
@@ -69,6 +72,7 @@
 
   <!-- plan details section -->
   <section class="mb-28 py-20 px-6 bg-dark-grey-blue rounded-lg">
+
     <!-- card container -->
     <div
       class="grid grid-cols-1 gap-y-16 tablet:grid-cols-3 tablet:gap-x-2.5 comp:gap-x-24"
@@ -285,14 +289,32 @@
          </label>
 
           <!-- Every month selection -->
-            <input type="radio" class="appearance-none"  name="shipping" id="monthly" value="Every month">
-            <label class=" " for="monthly">
-              <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer">
-                <h2 class="font-heading font-black text-2xl mb-2">Every month</h2>
-                <p class="font-body">$22.50 per shipment. Includes free priority shipping.</p>
-              </div>
-            </label>
+          <input type="radio" class="appearance-none"  name="shipping" id="monthly" value="Every month">
+          <label class=" " for="monthly">
+            <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer">
+              <h2 class="font-heading font-black text-2xl mb-2">Every month</h2>
+              <p class="font-body">$22.50 per shipment. Includes free priority shipping.</p>
+            </div>
+          </label>
       </fieldset>
+
+      <!-- order summary field -->
+      <div class="bg-dark-grey-blue rounded-lg mt-28 px-6 py-7 mb-14">
+        <p class="text-grey font-body font-light">Order Summary</p> 
+        <p class="font-heading font-black text-light-cream text-2xl">
+          “I drink coffee <span>_____</span>  , with a <span>_____</span> type of bean. <span>_____</span> ground ala <span>_____</span>, 
+          sent to me <span>_____</span>.”
+        </p>  
+      </div>
+
+      <!-- checkout button/form submit -->
+      <div class="text-center tablet:text-left ">
+        <button
+          class="text-light-cream text-xl w-52 h-14 bg-dark-cyan rounded-lg font-heading font-black"
+          type="sum"
+        >
+          Create my plan!
+      </button>
     </form> 
   </section>
   </main>
@@ -305,11 +327,6 @@
   04 Grind option
   05 Deliveries -->
 
-  Order Summary
-  “I drink coffee _____, with a _____ type of bean. _____ ground ala _____, 
-  sent to me _____.”
-
-  Create my plan!
 
   <!-- Modal -->
   Order Summary
@@ -359,7 +376,7 @@
         /></a>
       </div>
     </footer>
-    <script src="app.js"></script>
+    <script src="js/handleForm.js"></script>
 </body>
 
 </html>

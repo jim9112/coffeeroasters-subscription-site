@@ -1,5 +1,4 @@
-const inputs = document.querySelectorAll('input');
-
+// grab fieldsets from plan page form
 const coffeTypeInputs = document.querySelector('#coffeeType');
 const coffeStyleInputs = document.querySelector('#coffeeStyle');
 const coffeAmountInputs = document.querySelector('#coffeeAmount');
