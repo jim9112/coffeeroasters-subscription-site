@@ -1,47 +1,54 @@
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500&family=Fraunces:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="output.css" />
-  <title>Frontend Mentor | Coffeeroasters subscription site</title>
-</head>
+    <title>Frontend Mentor | Coffeeroasters subscription site</title>
+  </head>
 
-<body class="py-8 comp:px-20 comp:pb-24 bg-light-cream">
-  <header class="flex items-center relative px-6 comp:px-0">
-    <!-- logo/link home -->
-    <img
-      class="w-40 h-5 tablet:w-60 tablet:h-7"
-      src="./assets/shared/desktop/logo.svg"
-      alt="Coffeeroasters logo"
-    />
+  <body class="py-8 comp:px-20 comp:pb-24 bg-light-cream">
+    <header class="flex items-center relative px-6 comp:px-0">
+      <!-- logo/link home -->
+      <img
+        class="w-40 h-5 tablet:w-60 tablet:h-7"
+        src="./assets/shared/desktop/logo.svg"
+        alt="Coffeeroasters logo"
+      />
 
-    <!-- nav bar (desktop and tablet only) -->
-    <nav class="hidden tablet:inline inset-y-0 right-6 absolute">
-      <a
-        class="font-body text-grey text-xs font-bold tracking-wider mr-8"
-        href="./index.html"
-        >Home</a
-      >
-      <a
-        class="font-body text-grey text-xs font-bold tracking-wider mr-8"
-        href="./about.html"
-        >About us</a
-      >
-      <a
-        class="font-body text-grey text-xs font-bold tracking-wider"
-        href="./plan.html"
-        >Create your plan</a
-      >
-    </nav>
+      <!-- nav bar (desktop and tablet only) -->
+      <nav class="hidden tablet:inline inset-y-0 right-6 absolute">
+        <a
+          class="font-body text-grey text-xs font-bold tracking-wider mr-8"
+          href="./index.html"
+          >Home</a
+        >
+        <a
+          class="font-body text-grey text-xs font-bold tracking-wider mr-8"
+          href="./about.html"
+          >About us</a
+        >
+        <a
+          class="font-body text-grey text-xs font-bold tracking-wider"
+          href="./plan.html"
+          >Create your plan</a
+        >
+      </nav>
 
-    <!-- hamburger menu button (mobile only) -->
-    <button
+      <!-- hamburger menu button (mobile only) -->
+      <button
         id="mobileMenuButton"
         type="menu"
         class="inset-y-0 right-6 absolute tablet:hidden"
@@ -49,316 +56,589 @@
       >
         <img src="./assets/shared/mobile/icon-hamburger.svg" alt="" />
       </button>
-  </header>
-  <main class="relative">
-     <!-- mobile menu modal -->
-     <div
-     id="mobileMenuModal"
-     class="hidden bg-gradient-to-b from-light-cream via-light-cream top-0 right-0 absolute h-screen w-full"
-   >
-     <!-- mobile nav -->
-     <nav id="menuModal" class="grid grid-cols-1 text-center gap-y-8">
-       <a
-         class="font-heading font-black text-dark-grey-blue text-2xl tracking-wider mr-8"
-         href="index.html"
-         >Home</a
-       >
-       <a
-         class="font-heading font-black text-dark-grey-blue text-2xl tracking-wider mr-8"
-         href="./about.html"
-         >About us</a
-       >
-       <a
-         class="font-heading font-black text-dark-grey-blue text-2xl tracking-wider"
-         href="./plan.html"
-         >Create your plan</a
-       >
-     </nav>
-   </div>
-
-    <!-- hero section -->
-    <section
-    class=" mb-28 mx-6 bg-plan-hero-small bg-center bg-cover rounded-lg text-center py-24 px-6 grid place-content-center mt-8 tablet:bg-plan-hero-med tablet:place-content-start tablet:text-left tablet:pl-14 comp:bg-plan-hero-lg comp:pl-20 comp:py-28"
-  >
-
-    <!-- hero container -->
-    <div class=" tablet:w-96 comp:w-2/4 comp:h-auto">
-
-      <!-- hero title -->
-      <h1
-        class="text-light-cream font-heading font-black text-4xl mb-8 tablet:text-5xl comp:text-7xl"
+    </header>
+    <main class="relative">
+      <!-- mobile menu modal -->
+      <div
+        id="mobileMenuModal"
+        class="hidden bg-gradient-to-b from-light-cream via-light-cream top-0 right-0 absolute h-screen w-full"
       >
-      Create a plan
-      </h1>
-
-      <!-- hero description -->
-      <p class="text-light-cream font-body mb-9">
-        Build a subscription plan that best fits your needs. We offer an assortment of the best 
-  artisan coffees from around the globe delivered fresh to your door.
-      </p>
-    </div>
-  </section>
-
-  <!-- plan details section -->
-  <section class="mb-28 py-20 px-6 bg-dark-grey-blue rounded-lg">
-
-    <!-- card container -->
-    <div
-      class="grid grid-cols-1 gap-y-16 tablet:grid-cols-3 tablet:gap-x-2.5 comp:gap-x-24"
-    >
-      <!-- card 1 -->
-      <div class="text-center grid grid-cols-1 gap-8 tablet:text-left">
-        <h1 class="text-pale-orange font-heading font-black text-7xl">
-          01
-        </h1>
-        <h3 class="text-2xl font-black font-heading text-light-cream">
-          Pick your coffee
-        </h3>
-        <p class="text-light-cream font-body">
-          Select from our evolving range of artisan coffees. Our beans are
-          ethically sourced and we pay fair prices for them. There are new
-          coffees in all profiles every month for you to try out.
-        </p>
+        <!-- mobile nav -->
+        <nav id="menuModal" class="grid grid-cols-1 text-center gap-y-8">
+          <a
+            class="font-heading font-black text-dark-grey-blue text-2xl tracking-wider mr-8"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="font-heading font-black text-dark-grey-blue text-2xl tracking-wider mr-8"
+            href="./about.html"
+            >About us</a
+          >
+          <a
+            class="font-heading font-black text-dark-grey-blue text-2xl tracking-wider"
+            href="./plan.html"
+            >Create your plan</a
+          >
+        </nav>
       </div>
 
-      <!-- card 2 -->
-      <div class="text-center grid grid-cols-1 gap-8 tablet:text-left">
-        <h1 class="text-pale-orange font-heading font-black text-7xl">
-          02
-        </h1>
-        <h3 class="text-2xl font-black font-heading text-light-cream">
-          Choose the frequency
-        </h3>
-        <p class="text-light-cream font-body">
-          Customize your order frequency, quantity, even your roast style
-          and grind type. Pause, skip or cancel your subscription with no
-          commitment through our online portal.
-        </p>
-      </div>
+      <!-- hero section -->
+      <section
+        class="mb-28 mx-6 bg-plan-hero-small bg-center bg-cover rounded-lg text-center py-24 px-6 grid place-content-center mt-8 tablet:bg-plan-hero-med tablet:place-content-start tablet:text-left tablet:pl-14 comp:bg-plan-hero-lg comp:pl-20 comp:py-28"
+      >
+        <!-- hero container -->
+        <div class="tablet:w-96 comp:w-2/4 comp:h-auto">
+          <!-- hero title -->
+          <h1
+            class="text-light-cream font-heading font-black text-4xl mb-8 tablet:text-5xl comp:text-7xl"
+          >
+            Create a plan
+          </h1>
 
-      <!-- card 3 -->
-      <div class="text-center grid grid-cols-1 gap-8 tablet:text-left">
-        <h1 class="text-pale-orange font-heading font-black text-7xl">
-          03
-        </h1>
-        <h3 class="text-2xl font-black font-heading text-light-cream">
-          Receive and enjoy!
-        </h3>
-        <p class="text-light-cream font-body">
-          We ship your package within 48 hours, freshly roasted. Sit back
-          and enjoy award-winning world-class coffees curated to provide a
-          distinct tasting experience.
-        </p>
-      </div>
-    </div>
-  </section>
+          <!-- hero description -->
+          <p class="text-light-cream font-body mb-9">
+            Build a subscription plan that best fits your needs. We offer an
+            assortment of the best artisan coffees from around the globe
+            delivered fresh to your door.
+          </p>
+        </div>
+      </section>
 
-  <!-- order form section -->
-  <section class="px-6">
-    <form action="">
-
-
-      <!-- how do you drink your coffee fieldset -->
-      <fieldset id="coffeeStyle">
-        
-        <legend class="font-heading font-black text-grey text-2xl mb-8 relative w-full"><h2>How do you drink your coffee?</h2> <button type="button" aria-expanded="true"><img class="right-1 top-5 absolute transform rotate-180" src="assets/plan/desktop/icon-arrow.svg" alt="" ></button></legend>
-
-        <!-- capsule selection -->
-        <input type="radio" class="appearance-none"  name="type" id="capsule" value="Capsule">
-        <label class=" " for="capsule">
-          <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer">
-            <h2 class="font-heading font-black text-2xl mb-2">Capsule</h2>
-            <p class="font-body">Compatible with Nespresso systems and similar brewers</p>
-          </div>
-        </label>
-  
-        <!-- filter selection -->
-        <input type="radio" class=" appearance-none"  name="type" id="filter" value="Filter">
-        <label class="" for="filter">
-          <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue">
-            <h2 class="font-heading font-black text-2xl mb-2 ">Filter</h2>
-            <p class="font-body">For pour over or drip methods like Aeropress, Chemex, and V60</p> 
-          </div>
-        </label>
-  
-        <!-- espresso selection -->
-        <input type="radio" class="  appearance-none"  name="type" id="espresso" value="Espresso">
-        <label class=" " for="espresso">
-          <div class="bg-light-grey rounded-lg p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue">
-            <h2 class="font-heading font-black text-2xl mb-2">Espresso</h2>
-            <p class="font-body">Dense and finely ground beans for an intense, flavorful experience</p>
-          </div>
-        </label>
-
-      </fieldset>
-
-      <!-- what type of coffee fieldset -->
-      <fieldset id="coffeeType">
-        
-        <legend class="mt-24 font-heading font-black text-grey text-2xl mb-8 relative w-full"><h2>What type of coffee?</h2> <button type="button" aria-expanded="true"><img class="right-1 top-5 absolute transform rotate-180" src="assets/plan/desktop/icon-arrow.svg" alt="" ></button></legend>
-
-        <!-- single origin selection -->
-        <input type="radio" class=" appearance-none"  name="flavor" id="single-origin" value="Single Origin">
-        <label class=" " for="single-origin">
-          <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer">
-            <h2 class="font-heading font-black text-2xl mb-2">Single origin</h2>
-            <p class="font-body">Distinct, high quality coffee from a specific family-owned farm</p>
-          </div>
-        </label>
-  
-        <!-- decaf selection -->
-        <input type="radio" class="appearance-none"  name="flavor" id="decaf" value="Decaf">
-        <label class="" for="decaf">
-          <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue">
-            <h2 class="font-heading font-black text-2xl mb-2 ">Decaf</h2>
-            <p class="font-body">Just like regular coffee, except the caffeine has been removed</p> 
-          </div>
-        </label>
-  
-        <!-- blended selection -->
-        <input type="radio" class="appearance-none"  name="flavor" id="blended" value="Blended">
-        <label class=" " for="blended">
-          <div class="bg-light-grey rounded-lg p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue">
-            <h2 class="font-heading font-black text-2xl mb-2">Blended</h2>
-            <p class="font-body">Combination of two or three dark roasted beans of organic coffees</p>
-          </div>
-        </label>
-
-      </fieldset>
-
-       <!-- amount of coffee fieldset -->
-       <fieldset id="coffeeAmount">
-        
-        <legend class="mt-24 font-heading font-black text-grey text-2xl mb-8 relative w-full">
-          <h2>How much would you like?</h2> 
-          <button type="button" aria-expanded="true"><img class="right-1 top-5 absolute transform rotate-180" src="assets/plan/desktop/icon-arrow.svg" alt="">
-          </button>
-        </legend>
-
-        <!-- 250g selection -->
-        <input type="radio" class="appearance-none"  name="amount" id="small" value="250g">
-        <label class=" " for="small">
-          <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer">
-            <h2 class="font-heading font-black text-2xl mb-2">250g</h2>
-            <p class="font-body">Perfect for the solo drinker. Yields about 12 delicious cups.</p>
-          </div>
-        </label>
-  
-        <!-- 500g selection -->
-        <input type="radio" class=" appearance-none"  name="amount" id="medium" value="500g">
-        <label class="" for="medium">
-          <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue">
-            <h2 class="font-heading font-black text-2xl mb-2 ">500g</h2>
-            <p class="font-body">Perfect option for a couple. Yields about 40 delectable cups.</p> 
-          </div>
-        </label>
-  
-        <!-- 1000g selection -->
-        <input type="radio" class="  appearance-none"  name="amount" id="large" value="1000g">
-        <label class=" " for="large">
-          <div class="bg-light-grey rounded-lg p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue">
-            <h2 class="font-heading font-black text-2xl mb-2">1000g</h2>
-            <p class="font-body">Perfect for offices and events. Yields about 90 delightful cups.</p>
-          </div>
-        </label>
-
-      </fieldset>
-      
-      <!-- grind fieldset -->
-      <fieldset id="coffeeGrind">
-        <legend class="mt-24 font-heading font-black text-grey text-2xl mb-8 relative w-full"><h2>Want us to grind them?</h2> <button type="button" aria-expanded="true"><img class="right-1 top-5 absolute transform rotate-180" src="assets/plan/desktop/icon-arrow.svg" alt=""></button></legend>
-
-         <!-- whole bean selection -->
-         <input type="radio" class="appearance-none"  name="grind" id="wholebean" value="Wholebean">
-         <label class=" " for="wholebean">
-           <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer">
-             <h2 class="font-heading font-black text-2xl mb-2">Wholebean</h2>
-             <p class="font-body">Best coice to cherish the full sensory experience</p>
-           </div>
-         </label>
-
-         <!-- filter selection -->
-         <input type="radio" class="appearance-none"  name="grind" id="filtered" value="filter">
-         <label class=" " for="filtered">
-           <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer">
-             <h2 class="font-heading font-black text-2xl mb-2">Filter</h2>
-             <p class="font-body">For drip or pour-over coffee methods such as V60 or Aeropress</p>
-           </div>
-         </label>
-             <!-- Cafetiére selection -->
-             <input type="radio" class="appearance-none"  name="grind" id="cafetiere" value="Cafetiére">
-             <label class=" " for="cafetiere">
-               <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer">
-                 <h2 class="font-heading font-black text-2xl mb-2">Cafetiére</h2>
-                 <p class="font-body">Course ground beans specially suited for french press coffee</p>
-               </div>
-             </label>
-      </fieldset>
-
-       <!-- shipping frequency fieldset -->
-       <fieldset id="coffeeShipping">
-        <legend class="mt-24 font-heading font-black text-grey text-2xl mb-8 relative w-full"><h2>How often should we deliver?</h2> <button type="button" aria-expanded="true"><img class="right-1 top-5 absolute transform rotate-180" src="assets/plan/desktop/icon-arrow.svg" alt=""></button></legend>
-
-         <!-- Every week selection -->
-         <input type="radio" class="appearance-none"  name="shipping" id="weekly" value="Weekly">
-          <label for="weekly">
-           <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer">
-             <h2 class="font-heading font-black text-2xl mb-2">Every week</h2>
-             <p class="font-body">$14.00 per shipment. Includes free first-class shipping.</p>
-           </div>
-         </label>
-
-         <!-- Every two weeks selection -->
-         <input type="radio" class="appearance-none"  name="shipping" id="biWeekly" value="Every 2 weeks">
-         <label  for="biWeekly">
-           <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer">
-             <h2 class="font-heading font-black text-2xl mb-2">Every 2 weeks</h2>
-             <p class="font-body">$17.25 per shipment. Includes free priority shipping.</p>
-           </div>
-         </label>
-
-          <!-- Every month selection -->
-          <input type="radio" class="appearance-none"  name="shipping" id="monthly" value="Every month">
-          <label for="monthly">
-            <div class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer">
-              <h2 class="font-heading font-black text-2xl mb-2">Every month</h2>
-              <p class="font-body">$22.50 per shipment. Includes free priority shipping.</p>
-            </div>
-          </label>
-      </fieldset>
-
-      <!-- order summary field -->
-      <div class="bg-dark-grey-blue rounded-lg mt-28 px-6 py-7 mb-14">
-        <p class="text-grey font-body font-light">Order Summary</p> 
-        <p class="font-heading font-black text-light-cream text-2xl">
-          “I drink coffee <span>_____</span>  , with a <span>_____</span> type of bean. <span>_____</span> ground ala <span>_____</span>, 
-          sent to me <span>_____</span>.”
-        </p>  
-      </div>
-
-      <!-- checkout button/form submit -->
-      <div class="text-center tablet:text-left ">
-        <button
-          class="text-light-cream text-xl w-52 h-14 bg-dark-cyan rounded-lg font-heading font-black"
-          type="sum"
+      <!-- plan details section -->
+      <section class="mb-28 py-20 px-6 bg-dark-grey-blue rounded-lg">
+        <!-- card container -->
+        <div
+          class="grid grid-cols-1 gap-y-16 tablet:grid-cols-3 tablet:gap-x-2.5 comp:gap-x-24"
         >
-          Create my plan!
-      </button>
-    </form> 
-  </section>
-  </main>
+          <!-- card 1 -->
+          <div class="text-center grid grid-cols-1 gap-8 tablet:text-left">
+            <h1 class="text-pale-orange font-heading font-black text-7xl">
+              01
+            </h1>
+            <h3 class="text-2xl font-black font-heading text-light-cream">
+              Pick your coffee
+            </h3>
+            <p class="text-light-cream font-body">
+              Select from our evolving range of artisan coffees. Our beans are
+              ethically sourced and we pay fair prices for them. There are new
+              coffees in all profiles every month for you to try out.
+            </p>
+          </div>
 
+          <!-- card 2 -->
+          <div class="text-center grid grid-cols-1 gap-8 tablet:text-left">
+            <h1 class="text-pale-orange font-heading font-black text-7xl">
+              02
+            </h1>
+            <h3 class="text-2xl font-black font-heading text-light-cream">
+              Choose the frequency
+            </h3>
+            <p class="text-light-cream font-body">
+              Customize your order frequency, quantity, even your roast style
+              and grind type. Pause, skip or cancel your subscription with no
+              commitment through our online portal.
+            </p>
+          </div>
 
+          <!-- card 3 -->
+          <div class="text-center grid grid-cols-1 gap-8 tablet:text-left">
+            <h1 class="text-pale-orange font-heading font-black text-7xl">
+              03
+            </h1>
+            <h3 class="text-2xl font-black font-heading text-light-cream">
+              Receive and enjoy!
+            </h3>
+            <p class="text-light-cream font-body">
+              We ship your package within 48 hours, freshly roasted. Sit back
+              and enjoy award-winning world-class coffees curated to provide a
+              distinct tasting experience.
+            </p>
+          </div>
+        </div>
+      </section>
 
-  <!-- 01 Preferences
+      <!-- order form section -->
+      <section class="px-6">
+        <form>
+          <!-- how do you drink your coffee fieldset -->
+          <fieldset id="coffeeStyle">
+            <legend
+              class="font-heading font-black text-grey text-2xl mb-8 relative w-full"
+            >
+              <h2>How do you drink your coffee?</h2>
+              <button type="button" aria-expanded="true">
+                <img
+                  class="right-1 top-5 absolute transform rotate-180"
+                  src="assets/plan/desktop/icon-arrow.svg"
+                  alt=""
+                />
+              </button>
+            </legend>
+
+            <!-- grid container for tablet and greater screens -->
+            <div class="tablet:grid tablet:grid-cols-3 tablet:gap-x-2">
+              <!-- capsule selection -->
+              <div>
+                <input
+                  type="radio"
+                  class="appearance-none"
+                  name="type"
+                  id="capsule"
+                  value="Capsule"
+                />
+                <label class=" " for="capsule">
+                  <div
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer"
+                  >
+                    <h2 class="font-heading font-black text-2xl mb-2">
+                      Capsule
+                    </h2>
+                    <p class="font-body">
+                      Compatible with Nespresso systems and similar brewers
+                    </p>
+                  </div>
+                </label>
+              </div>
+
+              <!-- filter selection -->
+              <div>
+                <input
+                  type="radio"
+                  class="appearance-none"
+                  name="type"
+                  id="filter"
+                  value="Filter"
+                />
+                <label class="" for="filter">
+                  <div
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue"
+                  >
+                    <h2 class="font-heading font-black text-2xl mb-2">
+                      Filter
+                    </h2>
+                    <p class="font-body">
+                      For pour over or drip methods like Aeropress, Chemex, and
+                      V60
+                    </p>
+                  </div>
+                </label>
+              </div>
+
+              <!-- espresso selection -->
+              <div>
+                <input
+                  type="radio"
+                  class="appearance-none"
+                  name="type"
+                  id="espresso"
+                  value="Espresso"
+                />
+                <label class=" " for="espresso">
+                  <div
+                    class="bg-light-grey rounded-lg p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue"
+                  >
+                    <h2 class="font-heading font-black text-2xl mb-2">
+                      Espresso
+                    </h2>
+                    <p class="font-body">
+                      Dense and finely ground beans for an intense, flavorful
+                      experience
+                    </p>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- what type of coffee fieldset -->
+          <fieldset id="coffeeType">
+            <legend
+              class="mt-24 font-heading font-black text-grey text-2xl mb-8 relative w-full"
+            >
+              <h2>What type of coffee?</h2>
+              <button type="button" aria-expanded="true">
+                <img
+                  class="right-1 top-5 absolute transform rotate-180"
+                  src="assets/plan/desktop/icon-arrow.svg"
+                  alt=""
+                />
+              </button>
+            </legend>
+
+            <!-- grid container for tablet and greater screens -->
+            <div class="tablet:grid tablet:grid-cols-3 tablet:gap-x-2">
+              <!-- single origin selection -->
+              <div>
+                <input
+                  type="radio"
+                  class="appearance-none"
+                  name="flavor"
+                  id="single-origin"
+                  value="Single Origin"
+                />
+                <label class=" " for="single-origin">
+                  <div
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer"
+                  >
+                    <h2 class="font-heading font-black text-2xl mb-2">
+                      Single origin
+                    </h2>
+                    <p class="font-body">
+                      Distinct, high quality coffee from a specific family-owned
+                      farm
+                    </p>
+                  </div>
+                </label>
+              </div>
+
+              <!-- decaf selection -->
+              <div>
+                <input
+                  type="radio"
+                  class="appearance-none"
+                  name="flavor"
+                  id="decaf"
+                  value="Decaf"
+                />
+                <label class="" for="decaf">
+                  <div
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue"
+                  >
+                    <h2 class="font-heading font-black text-2xl mb-2">Decaf</h2>
+                    <p class="font-body">
+                      Just like regular coffee, except the caffeine has been
+                      removed
+                    </p>
+                  </div>
+                </label>
+              </div>
+
+              <!-- blended selection -->
+              <div>
+                <input
+                  type="radio"
+                  class="appearance-none"
+                  name="flavor"
+                  id="blended"
+                  value="Blended"
+                />
+                <label class=" " for="blended">
+                  <div
+                    class="bg-light-grey rounded-lg p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue"
+                  >
+                    <h2 class="font-heading font-black text-2xl mb-2">
+                      Blended
+                    </h2>
+                    <p class="font-body">
+                      Combination of two or three dark roasted beans of organic
+                      coffees
+                    </p>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- amount of coffee fieldset -->
+          <fieldset id="coffeeAmount">
+            <legend
+              class="mt-24 font-heading font-black text-grey text-2xl mb-8 relative w-full"
+            >
+              <h2>How much would you like?</h2>
+              <button type="button" aria-expanded="true">
+                <img
+                  class="right-1 top-5 absolute transform rotate-180"
+                  src="assets/plan/desktop/icon-arrow.svg"
+                  alt=""
+                />
+              </button>
+            </legend>
+
+            <!-- grid container for tablet and greater screens -->
+            <div class="tablet:grid tablet:grid-cols-3 tablet:gap-x-2">
+              <!-- 250g selection -->
+              <div>
+                <input
+                  type="radio"
+                  class="appearance-none"
+                  name="amount"
+                  id="small"
+                  value="250g"
+                />
+                <label class=" " for="small">
+                  <div
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer"
+                  >
+                    <h2 class="font-heading font-black text-2xl mb-2">250g</h2>
+                    <p class="font-body">
+                      Perfect for the solo drinker. Yields about 12 delicious
+                      cups.
+                    </p>
+                  </div>
+                </label>
+              </div>
+
+              <!-- 500g selection -->
+              <div>
+                <input
+                  type="radio"
+                  class="appearance-none"
+                  name="amount"
+                  id="medium"
+                  value="500g"
+                />
+                <label class="" for="medium">
+                  <div
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue"
+                  >
+                    <h2 class="font-heading font-black text-2xl mb-2">500g</h2>
+                    <p class="font-body">
+                      Perfect option for a couple. Yields about 40 delectable
+                      cups.
+                    </p>
+                  </div>
+                </label>
+              </div>
+
+              <div>
+                <!-- 1000g selection -->
+                <input
+                  type="radio"
+                  class="appearance-none"
+                  name="amount"
+                  id="large"
+                  value="1000g"
+                />
+                <label class=" " for="large">
+                  <div
+                    class="bg-light-grey rounded-lg p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue"
+                  >
+                    <h2 class="font-heading font-black text-2xl mb-2">1000g</h2>
+                    <p class="font-body">
+                      Perfect for offices and events. Yields about 90 delightful
+                      cups.
+                    </p>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- grind fieldset -->
+          <fieldset id="coffeeGrind">
+            <legend
+              class="mt-24 font-heading font-black text-grey text-2xl mb-8 relative w-full"
+            >
+              <h2>Want us to grind them?</h2>
+              <button type="button" aria-expanded="true">
+                <img
+                  class="right-1 top-5 absolute transform rotate-180"
+                  src="assets/plan/desktop/icon-arrow.svg"
+                  alt=""
+                />
+              </button>
+            </legend>
+
+            <!-- grid container for tablet and greater screens -->
+            <div class="tablet:grid tablet:grid-cols-3 tablet:gap-x-2">
+              <!-- whole bean selection -->
+              <div>
+                <input
+                  type="radio"
+                  class="appearance-none"
+                  name="grind"
+                  id="wholebean"
+                  value="Wholebean"
+                />
+                <label class=" " for="wholebean">
+                  <div
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer h-full"
+                  >
+                    <h2 class="font-heading font-black text-2xl mb-2">
+                      Wholebean
+                    </h2>
+                    <p class="font-body">
+                      Best coice to cherish the full sensory experience
+                    </p>
+                  </div>
+                </label>
+              </div>
+
+              <!-- filter selection -->
+              <div>
+                <input
+                  type="radio"
+                  class="appearance-none"
+                  name="grind"
+                  id="filtered"
+                  value="Filter"
+                />
+                <label class=" " for="filtered">
+                  <div
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer h-full"
+                  >
+                    <h2 class="font-heading font-black text-2xl mb-2">
+                      Filter
+                    </h2>
+                    <p class="font-body">
+                      For drip or pour-over coffee methods such as V60 or
+                      Aeropress
+                    </p>
+                  </div>
+                </label>
+              </div>
+
+              <!-- Cafetiére selection -->
+              <div>
+                <input
+                  type="radio"
+                  class="appearance-none"
+                  name="grind"
+                  id="cafetiere"
+                  value="Cafetiére"
+                />
+                <label class=" " for="cafetiere">
+                  <div
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer h-full"
+                  >
+                    <h2 class="font-heading font-black text-2xl mb-2">
+                      Cafetiére
+                    </h2>
+                    <p class="font-body">
+                      Course ground beans specially suited for french press
+                      coffee
+                    </p>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- shipping frequency fieldset -->
+          <fieldset id="coffeeShipping">
+            <legend
+              class="mt-24 font-heading font-black text-grey text-2xl mb-8 relative w-full"
+            >
+              <h2>How often should we deliver?</h2>
+              <button type="button" aria-expanded="true">
+                <img
+                  class="right-1 top-5 absolute transform rotate-180"
+                  src="assets/plan/desktop/icon-arrow.svg"
+                  alt=""
+                />
+              </button>
+            </legend>
+
+            <!-- grid container for tablet and greater screens -->
+            <div class="tablet:grid tablet:grid-cols-3 tablet:gap-x-2">
+              <!-- Every week selection -->
+              <div>
+                <input
+                  type="radio"
+                  class="appearance-none"
+                  name="shipping"
+                  id="weekly"
+                  value="Weekly"
+                />
+                <label for="weekly">
+                  <div
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer"
+                  >
+                    <h2 class="font-heading font-black text-2xl mb-2">
+                      Every week
+                    </h2>
+                    <p class="font-body">
+                      $14.00 per shipment. Includes free first-class shipping.
+                    </p>
+                  </div>
+                </label>
+              </div>
+
+              <!-- Every two weeks selection -->
+              <div>
+                <input
+                  type="radio"
+                  class="appearance-none"
+                  name="shipping"
+                  id="biWeekly"
+                  value="Every 2 weeks"
+                />
+                <label for="biWeekly">
+                  <div
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer"
+                  >
+                    <h2 class="font-heading font-black text-2xl mb-2">
+                      Every 2 weeks
+                    </h2>
+                    <p class="font-body">
+                      $17.25 per shipment. Includes free priority shipping.
+                    </p>
+                  </div>
+                </label>
+              </div>
+
+              <!-- Every month selection -->
+              <div>
+                <input
+                  type="radio"
+                  class="appearance-none"
+                  name="shipping"
+                  id="monthly"
+                  value="Every month"
+                />
+                <label for="monthly">
+                  <div
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer"
+                  >
+                    <h2 class="font-heading font-black text-2xl mb-2">
+                      Every month
+                    </h2>
+                    <p class="font-body">
+                      $22.50 per shipment. Includes free priority shipping.
+                    </p>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- order summary field -->
+          <div class="bg-dark-grey-blue rounded-lg mt-28 px-6 py-7 mb-14">
+            <p class="text-grey font-body font-light">Order Summary</p>
+            <p class="font-heading font-black text-light-cream text-2xl">
+              “I drink my coffee as
+              <span class="text-dark-cyan" id="field1">_____</span> , with a
+              <span class="text-dark-cyan" id="field2">_____</span> type of
+              bean. <span class="text-dark-cyan" id="field3">_____</span> ground
+              ala <span class="text-dark-cyan" id="field4">_____</span>, sent to
+              me <span class="text-dark-cyan" id="field5">_____</span>.”
+            </p>
+          </div>
+
+          <!-- checkout button/form submit -->
+          <div class="text-center tablet:text-left">
+            <button
+              id="formSubmit"
+              class="text-light-cream text-xl w-52 h-14 bg-dark-cyan rounded-lg font-heading font-black"
+              type="sum"
+            >
+              Create my plan!
+            </button>
+          </div>
+        </form>
+         
+      </section>
+    </main>
+
+    <!-- 01 Preferences
   02 Bean type
   03 Quantity
   04 Grind option
   05 Deliveries -->
 
-
-  <!-- Modal -->
-  Order Summary
+    <!-- Modal -->
+    <!-- Order Summary
 
   “I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
   sent to me _____.”
@@ -368,11 +648,11 @@
 
   $_____/month
 
-  Checkout
-  <!-- End modal -->
+  Checkout -->
+    <!-- End modal -->
 
-  <footer
-      class="bg-dark-grey-blue grid grid-cols-1 justify-items-center items-center gap-y-14 py-16 tablet:gap-0 tablet:py-14 comp:grid-cols-3 comp:px-20"
+    <footer
+      class="bg-dark-grey-blue grid grid-cols-1 justify-items-center items-center gap-y-14 py-16 tablet:gap-0 tablet:py-14 comp:grid-cols-3 comp:px-20 mt-32"
     >
       <!-- 217x24 -->
       <img
@@ -407,6 +687,5 @@
     </footer>
     <script src="js/handleForm.js"></script>
     <script src="js/mobileMenu.js"></script>
-</body>
-
+  </body>
 </html>

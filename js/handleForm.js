@@ -1,9 +1,18 @@
-// grab fieldsets from plan page form
+const form = document.querySelector('form');
+const allInputs = document.querySelectorAll('input');
+// import fieldsets from plan page form
 const coffeTypeInputs = document.querySelector('#coffeeType');
 const coffeStyleInputs = document.querySelector('#coffeeStyle');
 const coffeAmountInputs = document.querySelector('#coffeeAmount');
 const coffeGrindInputs = document.querySelector('#coffeeGrind');
 const coffeShipping = document.querySelector('#coffeeShipping');
+
+// import summary fields
+const fieldOne = document.querySelector('#field1');
+const fieldTwo = document.querySelector('#field2');
+const fieldThree = document.querySelector('#field3');
+const fieldFour = document.querySelector('#field4');
+const fieldFive = document.querySelector('#field5');
 
 // toggle background colors based on whether input is checked
 const setCheckedStyle = (input) => {
@@ -50,7 +59,16 @@ const enableGrind = () => {
   coffeGrindInputs.disabled = false;
 };
 
-function handleFieldset(fieldInput) {
+// handle form submit
+const handleFormSubmit = (e) => {
+  e.preventDefault();
+  console.log('form submitted');
+};
+
+// form submit event listener
+form.addEventListener('submit', handleFormSubmit);
+
+function handleFieldset(fieldInput, textField) {
   // select all needed elements in fieldset
   const inputs = fieldInput.querySelectorAll('input');
   const button = fieldInput.querySelector('button');
@@ -58,17 +76,20 @@ function handleFieldset(fieldInput) {
   // add event listeners to inputs in field set
   inputs.forEach((input) => {
     input.addEventListener('input', (e) => {
-      console.log(input.value);
       setCheckedStyle(inputs);
       if (input.id === 'capsule') disableGrind();
       if (input.id === 'filter' || input.id === 'espresso') enableGrind();
+      textField.textContent = input.value;
     });
   });
   button.addEventListener('click', () => handleDisplayToggle(inputs, button));
 }
 
-const grindSection = handleFieldset(coffeTypeInputs);
-const styleSection = handleFieldset(coffeStyleInputs);
-const amountSection = handleFieldset(coffeAmountInputs);
-const grindTypeSection = handleFieldset(coffeGrindInputs);
-const shippingSelection = handleFieldset(coffeShipping);
+form.reset();
+setCheckedStyle(allInputs);
+
+const grindSection = handleFieldset(coffeTypeInputs, fieldTwo);
+const styleSection = handleFieldset(coffeStyleInputs, fieldOne);
+const amountSection = handleFieldset(coffeAmountInputs, fieldThree);
+const grindTypeSection = handleFieldset(coffeGrindInputs, fieldFour);
+const shippingSelection = handleFieldset(coffeShipping, fieldFive);
