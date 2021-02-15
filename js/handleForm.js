@@ -32,10 +32,12 @@ const setCheckedStyle = (input) => {
 const handleDisplayToggle = (inputContainer, button) => {
   if (button.getAttribute('aria-expanded') === 'true') {
     inputContainer.classList.add('hidden');
+    inputContainer.classList.remove('tablet:grid');
     button.setAttribute('aria-expanded', 'false');
     button.firstElementChild.classList.remove('rotate-180');
   } else if (button.getAttribute('aria-expanded') === 'false') {
     inputContainer.classList.remove('hidden');
+    inputContainer.classList.add('tablet:grid');
     button.setAttribute('aria-expanded', 'true');
     button.firstElementChild.classList.add('rotate-180');
   }
@@ -73,7 +75,6 @@ function handleFieldset(fieldInput, textField) {
   const inputs = fieldInput.querySelectorAll('input');
   const button = fieldInput.querySelector('button');
   const inputContainer = fieldInput.querySelector('.inputContainer');
-  console.log(inputContainer);
   setCheckedStyle(inputs);
   // add event listeners to inputs in field set
   inputs.forEach((input) => {
