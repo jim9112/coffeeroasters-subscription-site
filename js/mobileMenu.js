@@ -2,6 +2,7 @@
 const mobileMenuButton = document.querySelector('#mobileMenuButton');
 const mobileMenuModal = document.querySelector('#mobileMenuModal');
 
+// open or close modal/toggle menu icon
 const handleClick = () => {
   if (mobileMenuButton.getAttribute('aria-expanded') === 'false') {
     mobileMenuModal.classList.remove('hidden');

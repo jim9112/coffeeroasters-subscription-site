@@ -48,13 +48,43 @@
       </nav>
 
       <!-- hamburger menu button (mobile only) -->
-      <button class="inset-y-0 right-0 absolute tablet:hidden">
+      <button
+        id="mobileMenuButton"
+        type="menu"
+        class="inset-y-0 right-0 absolute tablet:hidden"
+        aria-expanded="false"
+      >
         <img src="./assets/shared/mobile/icon-hamburger.svg" alt="" />
       </button>
     </header>
 
     <!-- main content -->
-    <main>
+    <main class="relative">
+      <!-- mobile menu modal -->
+      <div
+        id="mobileMenuModal"
+        class="hidden bg-gradient-to-b from-light-cream via-light-cream top-0 right-0 absolute h-screen w-full"
+      >
+        <!-- mobile nav -->
+        <nav id="menuModal" class="grid grid-cols-1 text-center gap-y-8">
+          <a
+            class="font-heading font-black text-dark-grey-blue text-2xl tracking-wider mr-8"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="font-heading font-black text-dark-grey-blue text-2xl tracking-wider mr-8"
+            href="./about.html"
+            >About us</a
+          >
+          <a
+            class="font-heading font-black text-dark-grey-blue text-2xl tracking-wider"
+            href="./plan.html"
+            >Create your plan</a
+          >
+        </nav>
+      </div>
+
       <!-- hero section -->
       <section
         class="bg-about-hero-small bg-center bg-cover rounded-lg text-center py-24 grid place-content-center mt-8 tablet:bg-about-hero-med tablet:place-content-start tablet:text-left tablet:pl-14 comp:bg-about-hero-lg comp:pl-20 comp:py-28"
@@ -263,5 +293,6 @@
         /></a>
       </div>
     </footer>
+    <script src="js/mobileMenu.js"></script>
   </body>
 </html>
