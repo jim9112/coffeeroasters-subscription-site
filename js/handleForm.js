@@ -33,11 +33,11 @@ const handleDisplayToggle = (inputs, button) => {
   if (button.getAttribute('aria-expanded') === 'true') {
     inputs.forEach((input) => input.labels[0].classList.add('hidden'));
     button.setAttribute('aria-expanded', 'false');
-    button.firstChild.classList.remove('rotate-180');
+    button.firstElementChild.classList.remove('rotate-180');
   } else if (button.getAttribute('aria-expanded') === 'false') {
     inputs.forEach((input) => input.labels[0].classList.remove('hidden'));
     button.setAttribute('aria-expanded', 'true');
-    button.firstChild.classList.add('rotate-180');
+    button.firstElementChild.classList.add('rotate-180');
   }
 };
 
