@@ -29,13 +29,13 @@ const setCheckedStyle = (input) => {
 };
 
 // toggle input display when button is clicked
-const handleDisplayToggle = (inputs, button) => {
+const handleDisplayToggle = (inputContainer, button) => {
   if (button.getAttribute('aria-expanded') === 'true') {
-    inputs.forEach((input) => input.labels[0].classList.add('hidden'));
+    inputContainer.classList.add('hidden');
     button.setAttribute('aria-expanded', 'false');
     button.firstElementChild.classList.remove('rotate-180');
   } else if (button.getAttribute('aria-expanded') === 'false') {
-    inputs.forEach((input) => input.labels[0].classList.remove('hidden'));
+    inputContainer.classList.remove('hidden');
     button.setAttribute('aria-expanded', 'true');
     button.firstElementChild.classList.add('rotate-180');
   }
@@ -72,6 +72,8 @@ function handleFieldset(fieldInput, textField) {
   // select all needed elements in fieldset
   const inputs = fieldInput.querySelectorAll('input');
   const button = fieldInput.querySelector('button');
+  const inputContainer = fieldInput.querySelector('.inputContainer');
+  console.log(inputContainer);
   setCheckedStyle(inputs);
   // add event listeners to inputs in field set
   inputs.forEach((input) => {
@@ -82,7 +84,9 @@ function handleFieldset(fieldInput, textField) {
       textField.textContent = input.value;
     });
   });
-  button.addEventListener('click', () => handleDisplayToggle(inputs, button));
+  button.addEventListener('click', () =>
+    handleDisplayToggle(inputContainer, button)
+  );
 }
 
 form.reset();
