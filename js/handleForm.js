@@ -32,17 +32,36 @@ const handleDisplayToggle = (inputs, button) => {
   }
 };
 
+// if capsule is selected disable grind section
+const disableGrind = () => {
+  // make sure grind selections are not checked
+  const grindInputs = coffeGrindInputs.querySelectorAll('input');
+  grindInputs.forEach((input) => {
+    input.checked = false;
+    setCheckedStyle(grindInputs);
+  });
+
+  // disable grind fieldset
+  coffeGrindInputs.disabled = true;
+};
+
+// enable the grind fieldset
+const enableGrind = () => {
+  coffeGrindInputs.disabled = false;
+};
+
 function handleFieldset(fieldInput) {
   // select all needed elements in fieldset
   const inputs = fieldInput.querySelectorAll('input');
   const button = fieldInput.querySelector('button');
-
-  // set initial styles based on default checked
   setCheckedStyle(inputs);
   // add event listeners to inputs in field set
   inputs.forEach((input) => {
     input.addEventListener('input', (e) => {
+      console.log(input.value);
       setCheckedStyle(inputs);
+      if (input.id === 'capsule') disableGrind();
+      if (input.id === 'filter' || input.id === 'espresso') enableGrind();
     });
   });
   button.addEventListener('click', () => handleDisplayToggle(inputs, button));
