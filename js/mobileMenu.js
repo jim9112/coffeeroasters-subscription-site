@@ -1,6 +1,8 @@
 // grab mobile menu button and mobile menu modal
 const mobileMenuButton = document.querySelector('#mobileMenuButton');
 const mobileMenuModal = document.querySelector('#mobileMenuModal');
+const planLinkButtons = document.querySelectorAll('.plan-link');
+console.log(planLinkButtons);
 
 // open or close modal/toggle menu icon
 const handleClick = () => {
@@ -14,5 +16,13 @@ const handleClick = () => {
     mobileMenuButton.innerHTML = `<img src="./assets/shared/mobile/icon-hamburger.svg" alt="" />`;
   }
 };
+
+if (planLinkButtons.length > 0) {
+  planLinkButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      window.location.href = '/plan.html';
+    });
+  });
+}
 
 mobileMenuButton.addEventListener('click', handleClick);
