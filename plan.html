@@ -109,7 +109,7 @@
       <section class="mb-28 py-20 px-6 bg-dark-grey-blue rounded-lg">
         <!-- card container -->
         <div
-          class="grid grid-cols-1 gap-y-16 tablet:grid-cols-3 tablet:gap-x-2.5 comp:gap-x-24"
+          class="grid grid-cols-1 gap-y-16 tablet:grid-cols-3 tablet:gap-x-2.5 comp:gap-x-24 comp:px-20"
         >
           <!-- card 1 -->
           <div class="text-center grid grid-cols-1 gap-8 tablet:text-left">
@@ -159,7 +159,17 @@
       </section>
 
       <!-- order form section -->
-      <section class="px-6">
+      <section class="px-6 comp:flex comp:flex-row">
+        <!-- form nav for large screens -->
+        <div class="hidden w-auto mx-32 comp:block">
+          <ul class="w-max divide-y-2 font-heading font-black text-2xl">
+            <li class="pb-6">01 Preferences</li>
+            <li class="py-6">02 Bean type</li>
+            <li class="py-6">03 Quantity</li>
+            <li class="py-6">04 Grind option</li>
+            <li class="pt-6">05 Deliveries</li>
+          </ul>
+        </div>
         <form>
           <!-- how do you drink your coffee fieldset -->
           <fieldset id="coffeeStyle">
@@ -189,9 +199,9 @@
                   id="capsule"
                   value="Capsule"
                 />
-                <label class=" " for="capsule">
+                <label for="capsule">
                   <div
-                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer"
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer tablet:h-64"
                   >
                     <h2 class="font-heading font-black text-2xl mb-2">
                       Capsule
@@ -214,7 +224,7 @@
                 />
                 <label class="" for="filter">
                   <div
-                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue"
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue tablet:h-64"
                   >
                     <h2 class="font-heading font-black text-2xl mb-2">
                       Filter
@@ -238,7 +248,7 @@
                 />
                 <label class=" " for="espresso">
                   <div
-                    class="bg-light-grey rounded-lg p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue"
+                    class="bg-light-grey rounded-lg p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue tablet:h-64"
                   >
                     <h2 class="font-heading font-black text-2xl mb-2">
                       Espresso
@@ -283,7 +293,7 @@
                 />
                 <label class=" " for="single-origin">
                   <div
-                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer"
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer tablet:h-64"
                   >
                     <h2 class="font-heading font-black text-2xl mb-2">
                       Single origin
@@ -307,7 +317,7 @@
                 />
                 <label class="" for="decaf">
                   <div
-                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue"
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue tablet:h-64"
                   >
                     <h2 class="font-heading font-black text-2xl mb-2">Decaf</h2>
                     <p class="font-body">
@@ -329,7 +339,7 @@
                 />
                 <label for="blended">
                   <div
-                    class="bg-light-grey rounded-lg p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue"
+                    class="bg-light-grey rounded-lg p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue tablet:h-64"
                   >
                     <h2 class="font-heading font-black text-2xl mb-2">
                       Blended
@@ -374,7 +384,7 @@
                 />
                 <label class=" " for="small">
                   <div
-                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer"
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer tablet:h-64"
                   >
                     <h2 class="font-heading font-black text-2xl mb-2">250g</h2>
                     <p class="font-body">
@@ -396,7 +406,7 @@
                 />
                 <label class="" for="medium">
                   <div
-                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue"
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue tablet:h-64"
                   >
                     <h2 class="font-heading font-black text-2xl mb-2">500g</h2>
                     <p class="font-body">
@@ -418,7 +428,7 @@
                 />
                 <label class=" " for="large">
                   <div
-                    class="bg-light-grey rounded-lg p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue"
+                    class="bg-light-grey rounded-lg p-6 text-dark-grey-blue cursor-pointer hover:bg-pale-orange hover:text-dark-grey-blue tablet:h-64"
                   >
                     <h2 class="font-heading font-black text-2xl mb-2">1000g</h2>
                     <p class="font-body">
@@ -461,7 +471,7 @@
                 />
                 <label class=" " for="wholebean">
                   <div
-                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer h-full"
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer tablet:h-64"
                   >
                     <h2 class="font-heading font-black text-2xl mb-2">
                       Wholebean
@@ -484,7 +494,7 @@
                 />
                 <label class=" " for="filtered">
                   <div
-                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer h-full"
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer tablet:h-64"
                   >
                     <h2 class="font-heading font-black text-2xl mb-2">
                       Filter
@@ -508,7 +518,7 @@
                 />
                 <label class=" " for="cafetiere">
                   <div
-                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer h-full"
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer tablet:h-64"
                   >
                     <h2 class="font-heading font-black text-2xl mb-2">
                       Cafetiére
@@ -553,7 +563,7 @@
                 />
                 <label for="weekly">
                   <div
-                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer"
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer tablet:h-64"
                   >
                     <h2 class="font-heading font-black text-2xl mb-2">
                       Every week
@@ -576,7 +586,7 @@
                 />
                 <label for="biWeekly">
                   <div
-                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer"
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer tablet:h-64"
                   >
                     <h2 class="font-heading font-black text-2xl mb-2">
                       Every 2 weeks
@@ -599,7 +609,7 @@
                 />
                 <label for="monthly">
                   <div
-                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer"
+                    class="bg-light-grey rounded-lg mb-4 p-6 text-dark-grey-blue hover:bg-pale-orange hover:text-dark-grey-blue cursor-pointer tablet:h-64"
                   >
                     <h2 class="font-heading font-black text-2xl mb-2">
                       Every month
@@ -627,7 +637,7 @@
           </div>
 
           <!-- checkout button/form submit -->
-          <div class="text-center tablet:text-left">
+          <div class="text-center comp:text-right">
             <button
               id="formSubmit"
               class="text-light-cream text-xl w-52 h-14 bg-dark-cyan rounded-lg font-heading font-black"
