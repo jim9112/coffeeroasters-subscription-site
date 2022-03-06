@@ -20,7 +20,7 @@ const handleClick = () => {
 if (planLinkButtons.length > 0) {
   planLinkButtons.forEach((button) => {
     button.addEventListener('click', () => {
-      window.location.href = './coffeeroasters-subscription-site/plan.html';
+      window.location.href = './plan.html';
     });
   });
 }
